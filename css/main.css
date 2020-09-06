@@ -467,6 +467,9 @@ a {
   .mainMenu, .hamIcon {
     display: none;
   }
+  .dropdown {
+    display: none;
+  }
   /* hide it on larger screens */
 }
 

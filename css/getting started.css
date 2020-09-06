@@ -421,6 +421,145 @@ a {
   z-index: 1;
 }
 
+.menu {
+  background: #000;
+}
+
+.menu .dropdown-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  background: #000;
+  width: 98.5vw;
+}
+
+.menu .show {
+  -webkit-animation: animate 0.5s ease;
+          animation: animate 0.5s ease;
+  display: block;
+}
+
+.articles-container {
+  background-color: #111;
+  padding: 1rem;
+}
+
+.articles-container .articles-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articles-container h5 {
+  margin: 1rem 3rem;
+  font-size: 1rem;
+  color: #888;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.articles-container .each-article {
+  margin: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1rem;
+  -webkit-box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.23);
+}
+
+.articles-container .each-article .article-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 120px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.articles-container .each-article .article-img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.articles-container .each-article h4 {
+  margin: 1rem 0rem;
+  font-size: 1rem;
+  color: #888;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.articles-container .each-article span {
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin: 1rem 0rem;
+}
+
+.articles-container .each-article p {
+  color: #291beb;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0rem;
+  text-align: left;
+}
+
+.articles-container .article-tags {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #ccc;
+  padding: 0rem 2rem;
+}
+
+.articles-container .other-info {
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articles-container .other-info span {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+  color: #3232d6;
+  font-size: 0.8rem;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 801px) and (max-width: 1800px) {
   .responsive-cards {
     display: none;
@@ -435,6 +574,9 @@ a {
     display: none;
   }
   .mainMenu, .hamIcon {
+    display: none;
+  }
+  .dropdown {
     display: none;
   }
   /* hide it on larger screens */
