@@ -1,0 +1,16 @@
+@media screen and (min-width: 500px) and (max-width: 600px) {
+
+  .button{
+    transform: scale(2) translateY(-3px);
+  }
+  .signin{
+    transform: scale(1);
+  }
+
+  .third-section{
+  
+    .third-section-title{
+      font-size: 1.2rem;
+    }
+  }
+}
