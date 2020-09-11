@@ -1570,4 +1570,21 @@ ul li a:hover {
     margin-right: 2rem;
     padding: 2rem 1rem;
   }
+  .top-part {
+    padding: 2rem 2rem;
+  }
+  .top-part .all-posts {
+    padding: 1rem 0rem;
+  }
+  .top-part .all-posts .each-post {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .top-part .all-posts .each-post .post-left-part {
+    font-size: 1rem;
+  }
+  .top-part .all-posts .each-post img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
