@@ -89,8 +89,8 @@
 }
 #drop-content{
   position: absolute;
-  top: 20px;
-  right: -28px;
+  top: 15px;
+  right: -25px;
 
 }
 #drop-content a{
@@ -98,7 +98,7 @@
   color: black;
   display: block;
   background-color: rgb(219, 219, 219);
-  margin: 8px 0px;
+  margin: 8px 05px;
   font-weight: 500;
   padding: 2px 3px;
   border-radius: 8px;
@@ -153,6 +153,7 @@
   }
 }
 .first-section{
+  padding-bottom: 5.5rem;
   display: flex;
   justify-content: space-around;
 }

@@ -1263,15 +1263,15 @@ blockquote cite:before {
   }
   #drop-content {
     position: absolute;
-    top: 20px;
-    right: -28px;
+    top: 15px;
+    right: -25px;
   }
   #drop-content a {
     text-align: center;
     color: black;
     display: block;
     background-color: #dbdbdb;
-    margin: 8px 0px;
+    margin: 8px 05px;
     font-weight: 500;
     padding: 2px 3px;
     border-radius: 8px;
@@ -1327,6 +1327,7 @@ blockquote cite:before {
     font-weight: 300;
   }
   .first-section {
+    padding-bottom: 5.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
