@@ -57,6 +57,7 @@ a{
 }
 
   nav{
+    opacity: 0.9;
     width: 100%;
     position: fixed;
     background-color: #FEFEFE;
@@ -99,7 +100,9 @@ a{
   .top-part{
     padding: 3rem 10rem;
     .top-part-heading{
-      padding-top: 3rem;
+      color: #787878;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
       border-bottom: 1px solid #E6E6E6;
       h4{
         color: #505050;
@@ -110,6 +113,22 @@ a{
       p{
         color: #929292;
         font-size: 1rem;
+      }
+      i{
+        padding: 2rem 0rem;
+        transition: ease 0.2s;
+        margin-right: 0.5rem;
+      }
+      a{
+        font-size: 0.7rem;
+        color: #0693E7;
+
+
+        &:hover{
+          i{
+            transform: translateX(-6px);
+          }
+        }
       }
     }
     

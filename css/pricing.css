@@ -394,6 +394,25 @@ ul li a:hover {
   transition: left 0.15s ease-out;
 }
 
+#off-position {
+  position: relative;
+}
+
+.off {
+  position: absolute;
+  z-index: 100;
+  left: 210px;
+  top: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #000;
+  padding: 0.3rem 0.5rem;
+  border-radius: 55px;
+  color: white;
+}
+
 @media screen and (min-width: 860px) and (max-width: 1800px) {
   .container .bigscreen-nav .menu-toggle {
     display: none;

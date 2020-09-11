@@ -24,8 +24,8 @@
        <ul>
        <li><a href="#" class="this">Pricing</a></li>
        <li><a href="#">Marketplace</a></li>
-       <li><a href="#">Updates</a></li>
-       <li><a href="#">For Creators</a></li>
+       <li><a href="updates.html">Updates</a></li>
+       <li><a href="index.html">For Creators</a></li>
        </ul>
     </nav>
   
@@ -64,12 +64,16 @@
                 <span class="each-span">$0 /mo</span><br>
                 <a href="#" class="btn">Install</a>
               </th>
-              <th class="each-title bg-color radius position">
+              <th class="each-title bg-color radius position" id="off-position">
+                <small class="off">-20 %</small>
                 <h4>Professional</h4>
                 <p class="small">Powerful features
                   for growing brands</p><br>
-                  <span class="each-span text1">$16 /mo</span><br>
-                  <span class="each-span text2">$20 /mo</span><br>
+                  <span class="each-span text1">$20 /mo</span>
+                  <span class="each-span text2">$16 /mo 
+                    <br>
+                  </span>
+                  <br><br>
                   <a href="#" class="btn">Start 14-day trail</a>
     
               </th>
@@ -208,21 +212,26 @@
       </div>
     </div>
 
-<script>function check() 
+<script> function check() 
   {
-    var checkBox = document.getElementsByClassName("radio");
+    var checkBox = document.getElementById("week");
     var text1 = document.getElementsByClassName("text1");
     var text2 = document.getElementsByClassName("text2");
+    var text3 = document.getElementsByClassName('off');
     for (var i = 0; i < text1.length; i++) 
     {
-      if (checkBox.checked === true) 
+      if (checkBox.checked == true) 
       {
         text1[i].style.display = "block";
         text2[i].style.display = "none";
-      } else (checkBox.checked !=== true) 
+        text3[i].style.display = "none";
+      } else 
       {
         text1[i].style.display = "none";
-        text2[i].style.display = "block";}
+        text2[i].style.display = "block";
+        text3[i].style.display = "block";
+      
+      }
     }
   }
   check();

@@ -47,11 +47,14 @@ a {
 }
 
 a:hover {
+  background-color: none;
   color: black;
   text-decoration: none;
 }
 
 nav {
+  width: 100%;
+  position: fixed;
   background-color: #FEFEFE;
   padding: 0.8rem;
   border-bottom: 1px solid #ccc;
@@ -103,7 +106,7 @@ nav .logo {
 }
 
 .top-part .top-part-heading {
-  padding: 1rem;
+  padding-top: 3rem;
   border-bottom: 1px solid #E6E6E6;
 }
 

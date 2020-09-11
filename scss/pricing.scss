@@ -330,7 +330,21 @@ body::-webkit-scrollbar-thumb:hover{
   }
 }
 
-
+#off-position{
+  position: relative;
+}
+.off{
+  position: absolute;
+  z-index:  100;
+  left: 210px;
+  top: 5px;
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #000;
+  padding: 0.3rem 0.5rem;
+  border-radius: 55px;
+  color: white;
+}
 
 
 // MEDIA QUERIES
