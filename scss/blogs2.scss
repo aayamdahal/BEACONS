@@ -507,6 +507,7 @@ a{
   }
 }
 
-@import 'media';
-@import 'media2';
+// MEDIA QUERIES
+@import 'media(ipad)';
+@import 'media2(iphone)';
 @import 'media3';

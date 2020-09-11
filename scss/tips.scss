@@ -112,7 +112,7 @@ a{
       .blog-span{
         animation:$blog-animation;
         margin-top: 8rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         
       }
     }
@@ -276,7 +276,7 @@ a{
 .card-container{
   background-color: #111;
   display: grid;
-  padding: 0rem 3rem;
+  padding: 2rem 3rem;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
 

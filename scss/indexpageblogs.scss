@@ -22,10 +22,14 @@ $circle-color-secondary: rgba(221, 221, 221, 0.425);
 
 $blog-animation: dropDown 0.7s ease;
 
+$left: left;
+
 $card-bg: #fff;
 
 $bg-color: #111;
 $each-color: #bbb;
+
+$small: 0.8rem;
 
 $mg-1: 1rem;
 // RESET
@@ -55,7 +59,6 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
 }
   .navbar{
     display: flex;
@@ -64,7 +67,7 @@ a{
 
     .logo-div{
       animation: $blog-animation;
-
+        margin-bottom: 0.1rem;    
     }
     .blog-logo{
       margin-right: 2rem;
@@ -72,9 +75,11 @@ a{
     }
 
     .blog-navbar-items{
+      margin-bottom: 1rem;
       animation: $blog-animation;
-      display: block;
-      align-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 1rem;
 
       // effect button on click 
@@ -87,7 +92,7 @@ a{
     color: white;
     font-family: $main-font;
     font-weight: 300;
-    margin: 0.8rem;
+    margin-top: 0.8rem;
 
     &:hover{
       color: $main-color;
@@ -105,6 +110,14 @@ a{
       text-align: center;
       background: url('/img/blog-card-1.jpg') no-repeat center center/cover;
 
+    }
+    .blog-image-2{
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('/img/blog-card-5.jpg') no-repeat center center/cover;
     }
 
     @keyframes dropDown{
@@ -243,7 +256,7 @@ a{
       margin: 1rem;
     }
     .card-small{
-
+      color: #2729B8;
         margin: 1rem;
         font-family: $secondary-font;
         font-size: 1rem;
@@ -253,7 +266,7 @@ a{
         font-weight: 700;
         font-family: $secondary-font;
         font-size: 1.2rem;
-        color: $each-color;
+        color: #2729B8;
       }
     }
     
@@ -261,17 +274,51 @@ a{
 }
 
 .card-content-main{
+ p{
+  margin: 2rem;
+  font-family: $secondary-font;
+  font-size: 1.2rem;
+  color: $each-color;
 
-  p{   
-     margin-bottom: 1rem;
+  }
+  .paragraph-list{   
+       margin: 2rem;
         font-family: $secondary-font;
         font-size: 1.2rem;
         color: $each-color;
   }
-  
-}
+  .card-gif{
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    .small{
+      font-size: $small;
+    }
+  }
+  ul li{
+    font-family: $secondary-font;
+    margin: 1.2rem;
+    color: $each-color;
+    font-size: 1.2rem;
+  }
+  .followers-see{
+    display: block;
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    font-family: $main-font;
+    font-weight: 600;
+    }
+  }
+
 
 .card-tips{
+  span{
+    display: block;
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    font-family: $main-font;
+    font-weight: 600;
+  }
   h4{
     text-align: left;
     font-size: 1.1rem;
@@ -289,6 +336,14 @@ a{
       color: $each-color;
       text-decoration: underline;
     }
+    .followers-see{
+      display: block;
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    font-family: $main-font;
+    font-weight: 600;
+    }
+    
 }
 .recommendation{
   background: $bg-color;
@@ -306,15 +361,18 @@ a{
   background-color: #141920;  
   justify-content: center;
   align-items: center;
-  .user-info{
+  .user-avatar-box{
     margin: 1.5rem;
     text-align: left;
 
     h6{
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      text-align: center;
     font-size: 1.2rem;
     font-family: $main-font;
-    font-weight: 600;
-    color: $each-color;
+    font-weight: 500;
+    color: #2C2FE6;
     }
     p{
       font-size: 1rem;
@@ -486,6 +544,75 @@ a{
   100%{
     opacity: 1;
   }
+}
+
+.card-title-left{
+
+  h2{
+  text-align: left;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: $main-font;
+  }
+  span{
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: $main-font;
+  }
+  ul li{
+    font-family: $secondary-font;
+    margin: 1.2rem;
+    color: $each-color;
+    font-size: 1.2rem;
+  }
+  a{
+    color: $each-color;
+    text-decoration: underline;
+  }
+ 
+}
+.no-dot{
+  
+  li{
+    padding: 1rem;
+    list-style: none;
+  }
+}
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+width: 500px;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #888;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
 }
 
 // MEDIA QUERIES

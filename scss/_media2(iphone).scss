@@ -75,10 +75,7 @@
     }
     }
   }
-.dropdown{
-  display: inline-block;
-  
-}
+
 .button{
   cursor: pointer;
   transform: scale(1.3) translateY(-2px);
@@ -248,10 +245,10 @@
 // blogs2.html
 
 .blog-page-2{
-  padding: 1rem;
+  padding: 1.5rem;
 
   .page-2-top{
-    height: 30vh;
+    height: 35vh;
     padding: 0rem;
 
     .featured{
@@ -433,6 +430,20 @@
     }
   }
 
-
+  .logo-only{
+    display: block;
+  }
   
+  .dropdown{
+    button{
+      display: block;
+    }
+  }
+  .res-gliders{
+    box-shadow: 0px 10px 17px -3px rgba(0,0,0,0.23);
+    
+    .card{
+      margin: 1rem;
+    }
+  }
 }

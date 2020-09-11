@@ -397,6 +397,6 @@ a{
 }
 
 // MEDIA QUERIES
-@import 'media';
-@import 'media2';
+@import 'media(ipad)';
+@import 'media2(iphone)';
 @import 'media3';

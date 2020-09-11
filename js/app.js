@@ -174,6 +174,7 @@ function show_hide(){
 // draggable
 $(".arrow").draggable();
 
+
 window.onload = function () {
   //select the thing we wanna drag
   var mustachio = document.getElementById('arrow');
@@ -188,7 +189,7 @@ window.onload = function () {
   })
 }
 
-
+// blogs dropdown
 function myfun(){
   var divs = document.getElementById('content');
 
@@ -204,11 +205,6 @@ window.onclick=function(event){
     }
   }
 }
-
-
-
-
-
 
 
 

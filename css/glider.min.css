@@ -13,8 +13,7 @@
 }
 .glider-track {
   transform: translateZ(0);
-  width: 100%;
-  margin: 0;
+   margin: 0;
   padding: 0;
   display: flex;
   z-index: 1;
