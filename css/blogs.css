@@ -677,6 +677,151 @@ a {
   }
 }
 
+.container .menu-icon {
+  position: absolute;
+  color: #000000;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1.5rem;
+  left: 42px;
+  top: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-container {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: black;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.menu-content {
+  padding: 2rem;
+  position: relative;
+  top: 5%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.menu-content h4 {
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-container .closebtn {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  position: absolute;
+  top: 36px;
+  right: 18px;
+  font-size: 30px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: white 3px solid;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel {
+  width: 90vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .track {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.carousel .track .card-overlay {
+  width: 300px;
+  height: 300px;
+  background: #000;
+  border-radius: 3px;
+  margin: 0rem;
+}
+
+.card-overlay .res-card-img {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+}
+
+.card-overlay .res-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #0d60ff;
+}
+
+.card-overlay .res-avatar {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -200px;
+  right: 300px;
+}
+
+.card-overlay .overlay-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card-overlay .overlay-month {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.bottom-part {
+  color: white;
+}
+
+.bottom-part p {
+  font-family: "Poppins", sans-serif;
+  padding-left: 1rem;
+  color: #808080;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.bottom-part a {
+  font-family: "Poppins", sans-serif;
+  color: #2729B8;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
 @media screen and (min-width: 860px) and (max-width: 1800px) {
   .container .bigscreen-nav .menu-toggle {
     display: none;
@@ -700,6 +845,9 @@ a {
     display: none;
   }
   .merchants-logo-res {
+    display: none;
+  }
+  .overlay {
     display: none;
   }
 }
@@ -1262,15 +1410,7 @@ a {
     margin-left: 1rem;
   }
   .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: none;
   }
   .navbar .blog-navbar-items .navbar-item {
     display: none;
@@ -1300,8 +1440,8 @@ a {
     font-weight: 300;
   }
   .first-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1746,6 +1886,45 @@ a {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
     }
+  }
+  .overlay {
+    padding: 1rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+  }
+  .overlay .three-dots {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 0rem 1rem;
+  }
+  .overlay img {
+    margin: 0rem 1rem;
+  }
+  .menu-content .top-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-content .top-part a {
+    font-family: "Poppins", sans-serif;
+    color: #ccc;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 0.8;
   }
 }
 

@@ -110,11 +110,8 @@
 
 // blog page
 .navbar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   .blog-navbar-items{
-
     .navbar-item{
       display: none;
     }
@@ -147,8 +144,8 @@
   }
 }
 .first-section{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-around;
 
@@ -573,4 +570,46 @@ blockquote{
 }
 
   }
+
+
+.overlay{
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+
+    .three-dots{
+      transform: rotate(90deg);
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      margin: 0rem 1rem;
+    }
+    img{
+      margin: 0rem 1rem;
+    }
+ 
+}
+
+.menu-content{
+  .top-part{
+    display: flex;
+    flex-direction: column;
+    
+    a{
+      font-family: $main-font;
+      color: #ccc;
+      font-size: 1rem;
+      margin: 10px;
+      line-height: 0.8;
+    }
+  }
+
+}
+
+
+
+
+
 } 

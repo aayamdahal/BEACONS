@@ -147,7 +147,6 @@ new Glider(document.querySelector('.glider'),{
     }
   })
 
-
 // POST SLIDER (GLIDER.JS LIBRARY) (on mobile screen)
 new Glider(document.querySelector('.gliders'),{
     slidesToShow: 1,
