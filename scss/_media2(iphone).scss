@@ -62,12 +62,12 @@
     justify-content: center;
     text-align: center;
     .main-heading{
-      width: 60vw;
+      width: 66vw;
       line-height: 1.2;
       margin-top: 3rem;
       text-align: center;
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
     .main-heading-block{
       text-align: center;
@@ -87,12 +87,7 @@
 #clicklink{
   position: relative;
 }
-#drop-content{
-  position: absolute;
-  top: 15px;
-  right: -25px;
 
-}
 #drop-content a{
   text-align: center;
   color: black;
@@ -108,9 +103,9 @@
   display: none;
 }
 .signin{
-  transform: scale(0.5);
+  transform: scale(0.6);
   display: flex;
-  margin-left: 8rem;
+  margin-left: 1rem;
 }
 
 // blog page
@@ -125,7 +120,6 @@
     }
 
     .dropdown{
-      
       margin-left: 8rem;
       transform: rotate(90deg);
     }
@@ -153,9 +147,18 @@
   }
 }
 .first-section{
-  padding-bottom: 5.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-around;
+
+  #drop-content{
+    transition: ease 1s;
+    position: absolute;
+    top: -20px;
+    right: 24px;
+  
+  }
 }
 
 // blogs.html
@@ -352,6 +355,7 @@
     .card-gif{
       transform: scale(0.6);
       margin: 0rem;
+
     }
   }
   
@@ -432,11 +436,15 @@
   }
 
   .logo-only{
+    padding: 1rem 0rem;
     display: block;
   }
   
   .dropdown{
+    transition: ease 1s;
+    
     button{
+      transform: scale(1.5);
       display: block;
     }
   }
@@ -447,4 +455,122 @@
       margin: 1rem;
     }
   }
+
+ .card-title-left{
+
+  h2{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  span{
+    font-size: 1rem;
+  }
+  ul li{
+    font-size: 1rem;
+  }
+
+ }
+
+ .card-tips{
+  padding: 0rem;
+  span{
+    font-size: 1.2rem;
+  }
+  ul li{
+    font-size: 1rem;
+  }
+
+  .followers-see{
+  padding: 1rem 0rem;
+  font-size: 1.2rem;
+  }
+
+ 
+ }
+.card-gif-scaled{
+  transform: scale(0.8);
 }
+.align-center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+blockquote{
+  font-size: 1rem;
+  width: 100vw;
+}
+
+.card-content-main{
+  .followers-see{
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    }
+}
+
+.blog-image-2{
+  height: 300px;
+}
+
+.container{
+  padding: 0rem;
+
+  .bigscreen-nav{
+    width: 100%;
+  }
+  .merchants-logo-res{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+}
+
+// merchant navbar
+.changelog-navbar{
+  overflow: visible;
+
+  .changelog-btn{
+    transform: translateX(-25px);
+    display: block;
+    cursor: pointer;
+  }
+}
+.menu{
+
+  width: 100%;
+  right: 0;
+  top: 80px;
+  background: #fff;
+  overflow: hidden;
+  max-height: 0;
+
+  a{
+    display: block !important;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.show{
+  z-index: -100;
+  animation: dropdrop ease 0.6s;
+  max-height: 500px;
+}
+@keyframes dropdrop {
+0%{
+  opacity: 0;
+  transform: translateY(-250px);
+}
+
+50%{
+  opacity: 0.7;
+}
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+  }
+} 

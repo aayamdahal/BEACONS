@@ -15,6 +15,9 @@
   }
 }
 @media screen and (min-width: 580px) and (max-width: 800px) {
+  .logo-only{
+    display: block;
+  }
   .logo{
     display: none;
   }
@@ -212,40 +215,7 @@
 }
 
 
-  .bigscreen-nav{
-    .menu-toggle{
-      margin: 20px;
-      cursor: pointer;
-      display: block;
-      width: 40px;
-      height: 40px;
-      margin: 10px;
-      float: left;
-      text-align: center;
-    }
-    .menu-toggle:before{
-      content: '\f0c9';
-      font-family: fontAwesome;
-      line-height: 40px;
-    }
-    .menu-toggle.active:before{
-      content: '\f00d';
-      font-family: fontAwesome;
-      line-height: 40px;
-    }
-    ul li{
-      display: none;
-    }
-    ul li.active{
-      display: block;
-      flex-direction: row;
-      margin-top: 2rem;
-      margin-right: 2rem;
-      padding: 2rem 1rem;
-    }
-    
-  }
-   
+  
 
 .top-part{
   padding: 2rem 2rem;
@@ -257,8 +227,12 @@
       .post-left-part{
         font-size: 1rem;
       }
-      img{
-        transform: scale(0.7);
+     
+      .post-right-part{
+        img{
+          display: flex;
+          transform: scale(0.7);
+        }
       }
     }
   }

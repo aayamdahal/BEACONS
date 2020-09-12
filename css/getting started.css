@@ -585,7 +585,6 @@ a {
   .merchants-logo-res {
     display: none;
   }
-  /* hide it on larger screens */
 }
 
 @media (max-width: 820px) {
@@ -1100,12 +1099,12 @@ a {
     text-align: center;
   }
   .second-section .left-part .main-heading {
-    width: 60vw;
+    width: 66vw;
     line-height: 1.2;
     margin-top: 3rem;
     text-align: center;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .second-section .left-part .main-heading-block {
     text-align: center;
@@ -1123,11 +1122,6 @@ a {
   #clicklink {
     position: relative;
   }
-  #drop-content {
-    position: absolute;
-    top: 15px;
-    right: -25px;
-  }
   #drop-content a {
     text-align: center;
     color: black;
@@ -1143,12 +1137,12 @@ a {
     display: none;
   }
   .signin {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 8rem;
+    margin-left: 1rem;
   }
   .navbar {
     display: -webkit-box;
@@ -1189,12 +1183,20 @@ a {
     font-weight: 300;
   }
   .first-section {
-    padding-bottom: 5.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .first-section #drop-content {
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+    position: absolute;
+    top: -20px;
+    right: 24px;
   }
   .blog-post .blog-card-top {
     height: 38vh;
@@ -1488,9 +1490,16 @@ a {
     font-size: 1.2rem;
   }
   .logo-only {
+    padding: 1rem 0rem;
     display: block;
   }
+  .dropdown {
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+  }
   .dropdown button {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     display: block;
   }
   .res-gliders {
@@ -1499,6 +1508,127 @@ a {
   }
   .res-gliders .card {
     margin: 1rem;
+  }
+  .card-title-left h2 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .card-title-left span {
+    font-size: 1rem;
+  }
+  .card-title-left ul li {
+    font-size: 1rem;
+  }
+  .card-tips {
+    padding: 0rem;
+  }
+  .card-tips span {
+    font-size: 1.2rem;
+  }
+  .card-tips ul li {
+    font-size: 1rem;
+  }
+  .card-tips .followers-see {
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+  }
+  .card-gif-scaled {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  blockquote {
+    font-size: 1rem;
+    width: 100vw;
+  }
+  .card-content-main .followers-see {
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+  }
+  .blog-image-2 {
+    height: 300px;
+  }
+  .container {
+    padding: 0rem;
+  }
+  .container .bigscreen-nav {
+    width: 100%;
+  }
+  .container .merchants-logo-res {
+    display: none;
+  }
+  .container .logo {
+    display: none;
+  }
+  .changelog-navbar {
+    overflow: visible;
+  }
+  .changelog-navbar .changelog-btn {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a {
+    display: block !important;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+  .show {
+    z-index: -100;
+    -webkit-animation: dropdrop ease 0.6s;
+            animation: dropdrop ease 0.6s;
+    max-height: 500px;
+  }
+  @-webkit-keyframes dropdrop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-250px);
+              transform: translateY(-250px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes dropdrop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-250px);
+              transform: translateY(-250px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
   }
 }
 
@@ -1517,6 +1647,9 @@ a {
 }
 
 @media screen and (min-width: 580px) and (max-width: 800px) {
+  .logo-only {
+    display: block;
+  }
   .logo {
     display: none;
   }
@@ -1722,39 +1855,6 @@ a {
             transform: scale(1.3);
     margin: 0.5rem;
   }
-  .bigscreen-nav .menu-toggle {
-    margin: 20px;
-    cursor: pointer;
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    float: left;
-    text-align: center;
-  }
-  .bigscreen-nav .menu-toggle:before {
-    content: '\f0c9';
-    font-family: fontAwesome;
-    line-height: 40px;
-  }
-  .bigscreen-nav .menu-toggle.active:before {
-    content: '\f00d';
-    font-family: fontAwesome;
-    line-height: 40px;
-  }
-  .bigscreen-nav ul li {
-    display: none;
-  }
-  .bigscreen-nav ul li.active {
-    display: block;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    padding: 2rem 1rem;
-  }
   .top-part {
     padding: 2rem 2rem;
   }
@@ -1768,7 +1868,10 @@ a {
   .top-part .all-posts .each-post .post-left-part {
     font-size: 1rem;
   }
-  .top-part .all-posts .each-post img {
+  .top-part .all-posts .each-post .post-right-part img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }

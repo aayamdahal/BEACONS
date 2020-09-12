@@ -146,8 +146,40 @@ a{
       border-bottom: 1px solid #E6E6E6;
 
       .post-left-part{
+        
         font-size: 0.3rem;
         font-family: 'Open Sans Condensed', sans-serif;
+
+    
+        .flag-part{
+          display: flex;
+          align-items: center;
+
+          i{
+            padding: 0.8rem;
+            color: #808080;
+            font-size: 0.8rem;
+          }
+          span{
+            color: #808080;
+            font-size: 0.8rem;
+          }
+        }
+        .avatar-changelog{
+          padding-left: 0.5rem;
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          img{
+            height: 25px;
+            width: 25px;
+          }
+          span{
+            font-family: $secondary-font;
+            font-size: 1rem;
+            color: #808080;
+          }
+        }
       }
       .post-right-part{
         .enter-post{
