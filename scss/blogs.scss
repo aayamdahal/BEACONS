@@ -362,7 +362,14 @@ a{
   opacity: 0;
   }
   .main-card-13{
-opacity: 0;
+  opacity: 0;
+  }
+  .main-card-1{
+    transition: ease 0.5s;
+    &:hover{
+      box-shadow: $box-shadow-hover;
+      transform: $translate-card;
+    }
   }
 }
 .page-btn{

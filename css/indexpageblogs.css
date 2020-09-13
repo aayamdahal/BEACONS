@@ -717,13 +717,13 @@ blockquote cite:before {
   .dropdown button {
     display: none;
   }
-  .logo-only {
-    display: none;
-  }
   .merchants-logo-res {
     display: none;
   }
   .overlay {
+    display: none;
+  }
+  .logo-only {
     display: none;
   }
 }
@@ -1151,25 +1151,11 @@ blockquote cite:before {
   .blog-page-2 {
     padding: 2rem;
   }
-  .logo-only {
-    display: none;
-  }
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 1rem 1rem;
-  }
-  .navbar .logo-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .navbar .logo {
     margin-right: 0rem;
@@ -1286,7 +1272,7 @@ blockquote cite:before {
     margin-left: 1rem;
   }
   .navbar {
-    display: none;
+    display: block;
   }
   .navbar .blog-navbar-items .navbar-item {
     display: none;
@@ -1317,7 +1303,7 @@ blockquote cite:before {
   }
   .first-section {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1714,30 +1700,31 @@ blockquote cite:before {
     cursor: pointer;
   }
   .menu {
-    width: 100%;
+    width: 98vw;
     right: 0;
-    top: 80px;
+    top: 55px;
     background: #fff;
     overflow: hidden;
     max-height: 0;
+    text-align: center;
   }
   .menu a {
+    width: 100%;
     display: block !important;
     border-bottom: 1px solid #ccc;
     text-align: center;
     padding: 10px;
   }
   .show {
-    z-index: -100;
-    -webkit-animation: dropdrop ease 0.6s;
-            animation: dropdrop ease 0.6s;
-    max-height: 500px;
+    -webkit-animation: dropdrop ease 0.5s;
+            animation: dropdrop ease 0.5s;
+    max-height: 550px;
   }
   @-webkit-keyframes dropdrop {
     0% {
       opacity: 0;
-      -webkit-transform: translateY(-250px);
-              transform: translateY(-250px);
+      -webkit-transform: translateY(-200px);
+              transform: translateY(-200px);
     }
     50% {
       opacity: 0.7;
@@ -1751,8 +1738,8 @@ blockquote cite:before {
   @keyframes dropdrop {
     0% {
       opacity: 0;
-      -webkit-transform: translateY(-250px);
-              transform: translateY(-250px);
+      -webkit-transform: translateY(-200px);
+              transform: translateY(-200px);
     }
     50% {
       opacity: 0.7;
@@ -1802,6 +1789,268 @@ blockquote cite:before {
     margin: 10px;
     line-height: 0.8;
   }
+  .top-area {
+    padding: 3rem 1rem;
+    margin-top: 2.5rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .top-area .left-part {
+    margin: 0rem;
+    width: 100vw;
+  }
+  .top-area .left-part .shopify {
+    font-size: 0.8rem;
+  }
+  .top-area .left-part p {
+    font-size: 1rem;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  .top-area .left-part p span {
+    color: #00ab6c;
+  }
+  .top-area .left-part .shopify-desc {
+    margin: 1rem 0rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .top-area .left-part .install {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  .top-area .left-part .shopify-logo {
+    position: relative;
+    z-index: -1;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin: 0.8rem;
+  }
+  .top-area .right-part {
+    width: 100vw;
+  }
+  .top-area .right-part .shopify-img {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .brand-ambassadors {
+    padding: 2rem;
+    text-align: center;
+  }
+  .brand-ambassadors h4 {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .brand-ambassadors p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+  }
+  .brand-ambassadors .brand-items {
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .brand-ambassadors .brand-items i {
+    margin-bottom: 1rem;
+    color: #00ab6c;
+  }
+  .brand-ambassadors .brand-items h4 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .brand-ambassadors .brand-items p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #666;
+  }
+  .brand-ambassadors .brand-items .each-brand {
+    margin: 1rem;
+  }
+  .influencers {
+    padding: 1rem;
+  }
+  .influencers h4 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .influencers .each-influencers {
+    padding-left: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .influencers .each-influencers img:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .marketing {
+    width: 100vw;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .marketing .marketing-left-part {
+    width: 100vw;
+  }
+  .marketing .marketing-left-part h4 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+  }
+  .marketing .marketing-right-part {
+    text-align: center;
+    width: 80vw;
+  }
+  .marketing .marketing-right-part h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  .marketing .marketing-right-part p {
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  .marketing .marketing-right-part div {
+    margin: 1rem;
+  }
+  .marketing .marketing-right-part .logos-shopify {
+    display: block;
+    text-align: center;
+    gap: 0rem;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .marketing .marketing-right-part .logos-shopify .shopify-logo-marketing-2 {
+    margin-top: 1rem;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .footer {
+    background-color: rgba(204, 204, 204, 0.13);
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .footer a {
+    color: black;
+    text-decoration: none;
+  }
+  .footer .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .company-info {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .company-resources {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .company-support {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .backedby {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .backedby a {
+    text-decoration: underline;
+  }
+  .footer .backedby .socials i {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    margin: 0.5rem;
+  }
+  .panel-primary {
+    padding: 1rem 0rem;
+  }
+  .table {
+    padding: 0rem;
+  }
+  .table .each-title .each-span {
+    font-size: 1.4rem;
+  }
+  .table .btn {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 0.8rem;
+  }
+  .main-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .small-heading {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 0.8rem;
+    line-height: 1.4;
+  }
+  .off {
+    left: 60px;
+    top: 88px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
@@ -1819,9 +2068,6 @@ blockquote cite:before {
 }
 
 @media screen and (min-width: 580px) and (max-width: 800px) {
-  .logo-only {
-    display: block;
-  }
   .logo {
     display: none;
   }
@@ -1834,7 +2080,7 @@ blockquote cite:before {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
-    padding: 2rem 2rem;
+    padding: 0rem;
     margin-top: 0rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);

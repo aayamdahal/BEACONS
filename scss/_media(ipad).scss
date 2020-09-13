@@ -59,14 +59,15 @@ $each-color: #bbb;
     }
   }
 
-.logo-only{
-  display: none;
-}
+
 .merchants-logo-res{
   display: none;
 }
 
 .overlay{
+  display: none;
+}
+.logo-only{
   display: none;
 }
 }
@@ -489,9 +490,7 @@ $each-color: #bbb;
  }
  
 
- .logo-only{
-  display: none;
-}
+
 
 }
 

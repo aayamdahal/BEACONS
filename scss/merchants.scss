@@ -98,7 +98,25 @@ body::-webkit-scrollbar-thumb:hover{
    }
  }
 }
+.show{
+  animation: dropdrop ease 0.5s;
+  max-height: 550px;
+}
+@keyframes dropdrop {
+0%{
+  opacity: 0;
+  transform: translateY(-200px);
+}
 
+50%{
+  opacity: 0.7;
+}
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+  }
 
 .top-area{
   width: 100vw;
@@ -116,6 +134,7 @@ body::-webkit-scrollbar-thumb:hover{
       font-family: $main-font;
       font-size: 0.8rem;
     }
+    
     p{
       font-size: 3rem;
       line-height: 1;
@@ -135,7 +154,8 @@ body::-webkit-scrollbar-thumb:hover{
       font-size: 1rem;
     }
     .shopify-logo{
-      margin: 0.8rem;    }
+      margin: 0.8rem;   
+    }
   }
   .right-part{
     width: 50vw;

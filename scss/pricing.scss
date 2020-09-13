@@ -40,63 +40,63 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
   background: $main-color;
 }
-.container{
-  padding: 4rem;
-
-  .bigscreen-nav{
-    font-family: $main-font;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 99%;
-    z-index: 1;
-    transition: top 0.3s;
-
-    .merchants-logo-res{
-      padding: 1rem;
-    }
-    ul{
-      list-style: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: flex;
-      line-height: 80px;
-    }
-    li{
-      font-family: $main-font;
+.changelog-navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background:rgba(177, 61, 61, 0);
+  width: 104%; 
+ 
+  .changelog-logo{
+    background: url(/img/Capture-removebg-preview.png) no-repeat 50% 50%;
+   background-size: contain;
+   width: 120px;
+   height: 40px;
+   float: left;
+   margin-left: 20px;
+  }
+ 
+  .menu{
+    position: absolute;
+    right: 20px;
+    
+    a{
+      display: inline-block;
       font-weight: 500;
-      transition: ease 0.2s;
-      margin: 0rem 1rem;
+      color: #000;
       text-decoration: none;
-      transition: ease 0.2s;
-
+      font-family: $main-font;
+       margin-right: 55px;
+       transition: all 0.3s;
+      &:hover{
+        transform: translateY(-5px);
+        color: $main-color;
+        border-bottom: 2px solid $main-color;
+      }
+ 
       &:active{
         transform: translateY(3px);
       }
-    }
-    .this{
-      color: #3B9FF6;
+ 
     }
   }
-}
-
-  ul li a{
-    color: #000;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-family: $main-font;
-    font-size: 0.9rem;
-    &:hover{
-      color: black;
-      text-decoration: none;
+  .changelog-btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+ 
+    .clg-hamburger{
+      display: block;
+      margin: 5px;
+      width: 23px;
+      height: 2px;
+      background: #000;
     }
-  
-} 
+  }
+ }
 
 .top-area{
   width: 100vw;
@@ -203,7 +203,7 @@ body::-webkit-scrollbar-thumb:hover{
   .each-title{
     position: relative;
     border-top: none;
-   text-align: center;
+    text-align: center;
    .each-span{
     font-size: 1.5rem;
 
