@@ -1169,6 +1169,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 1rem;
     padding: 2rem 0.5rem;
   }
+  .blog-pg2-card-container {
+    padding-top: 1rem;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
   .blog-pg2-card-container .blog-pg2-card-1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -1505,14 +1510,20 @@ body::-webkit-scrollbar-thumb:hover {
         grid-template-columns: repeat(1, 1fr);
   }
   .top-area .left-part {
+    text-align: center;
+    padding-top: 1rem;
     margin: 0rem;
-    width: 100vw;
+    width: 93vw;
   }
   .top-area .left-part .shopify {
     font-size: 0.8rem;
   }
   .top-area .left-part p {
-    font-size: 1rem;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.7rem;
     line-height: 1;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -1598,15 +1609,8 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .influencers .each-influencers {
     padding-left: 2rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    display: block;
+    text-align: center;
   }
   .influencers .each-influencers img:not(:last-child) {
     margin-bottom: 1rem;
@@ -1661,16 +1665,16 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .footer {
+  .footer-merchants {
     background-color: rgba(204, 204, 204, 0.13);
     padding: 2rem;
     font-family: "Poppins", sans-serif;
   }
-  .footer a {
+  .footer-merchants a {
     color: black;
     text-decoration: none;
   }
-  .footer .footer-container {
+  .footer-merchants .footer-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[1];
@@ -1681,7 +1685,7 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .footer .company-info {
+  .footer-merchants .company-info {
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1691,7 +1695,7 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .company-resources {
+  .footer-merchants .company-resources {
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1701,7 +1705,7 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .company-support {
+  .footer-merchants .company-support {
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1711,7 +1715,7 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .backedby {
+  .footer-merchants .backedby {
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1721,10 +1725,10 @@ body::-webkit-scrollbar-thumb:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .backedby a {
+  .footer-merchants .backedby a {
     text-decoration: underline;
   }
-  .footer .backedby .socials i {
+  .footer-merchants .backedby .socials i {
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
     margin: 0.5rem;
@@ -1759,6 +1763,52 @@ body::-webkit-scrollbar-thumb:hover {
   .off {
     left: 60px;
     top: 88px;
+  }
+  .top-part {
+    padding: 3rem 1.5rem;
+  }
+  .top-part .top-part-heading {
+    padding-top: 2rem;
+  }
+  .all-posts {
+    padding: 2rem 0rem;
+  }
+  .all-posts .each-post {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid #E6E6E6;
+  }
+  .all-posts .each-post .post-left-part {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .all-posts .each-post .post-right-part {
+    width: 90vw;
+  }
+  .all-posts .each-post .post-right-part .enter-post {
+    margin-top: 2rem;
+  }
+  .all-posts .each-post .post-right-part .enter-post a {
+    display: block;
+    text-align: center;
+    width: 90vw;
+    line-height: 2;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .all-posts .each-post .post-right-part .enter-post i {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .all-posts .each-post .post-right-part img {
+    width: 90vw;
   }
 }
 

@@ -12,7 +12,6 @@
   <title>Beacons Blog</title>
 </head>
 <body>
-
   <div class="menu">
     <div id="content" class="dropdown-content">
      <div class="articles-container">
@@ -64,55 +63,102 @@
   </div>
 
 
+<!-- small screen dropdown -->
+<div class="overlay">
+  <div class="three-dots"onclick="openMenu()">&hellip;</div>
+ <a href="index.html"><img src="/img/beacons-dark.png" alt=""></a>
+</div>
+<div class="menu-container" id="navbar">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+  <div class="menu-content">
+    <div class="top-part">
+      <a href="index.html">Beacons</a>
+      <a href="blogs.html">Blog</a>
+      <a href="tips.html">Tips</a>
+      <a href="research.html">Research</a>
+      </div>
+      <h4>Recent articles</h4>
+
+      <div class="middle-part">
+      <div class="container">
+        <div class="carousel">
+          <div class="track">
+            <!-- card-1 -->
+            <div class="card-overlay">
+              <a href="getting started.html" class="res-card">
+                <img src="/img/blog-card-13.jpg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                <div class="overlay-header"><h5>Taking Commissions&#128104;</h5></div>
+                <div class="overlay-month"><h6>6 months ago</h6></div>
+              </a>
+              </div>
+
+              <!-- card-2 -->
+              <div class="card-overlay">
+                <a href="getting started.html" class="res-card">
+                  <img src="/img/blog-card-7.jpg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                  <div class="overlay-header"><h5>Featuring a video &#127916;</h5></div>
+                  <div class="overlay-month"><h6>5 months ago</h6></div>
+                </a>
+                </div>
+  
+
+                <!-- card-3 -->
+
+
+                <div class="card-overlay">
+                  <a href="getting started.html" class="res-card">
+                    <img src="/img/blog-card-8.jpg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                    <div class="overlay-header"><h5>Setting up with stripe&#127970;</h5></div>
+                    <div class="overlay-month"><h6>5 months ago</h6></div>
+                  </a>
+                  </div>
+
+
+              <!-- card-4 -->
+
+              <div class="card-overlay">
+                <a href="getting started.html" class="res-card">
+                  <img src="/img/blog-card-9.jpeg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                  <div class="overlay-header"><h5>The Smart Link</h5></div>
+                  <div class="overlay-month"><h6>5 months ago</h6></div>
+                </a>
+                </div>
 
 
 
+                <!-- card-5 -->
 
 
+                <div class="card-overlay">
+                  <a href="getting started.html" class="res-card">
+                    <img src="/img/blog-card-10.jpg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                    <div class="overlay-header"><h5>Monetization for content creators</h5></div>
+                    <div class="overlay-month"><h6>4 months ago</h6></div>
+                  </a>
+                  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  <!-- card -6 -->
+                  <div class="card-overlay">
+                    <a href="getting started.html" class="res-card">
+                      <img src="/img/blog-card-2.jpg" alt="" class="res-card-img"><img src="/img/avatar-1.png" alt="" class="res-avatar">
+                      <div class="overlay-header"><h5>Optimizing your links for clicks</h5></div>
+                      <div class="overlay-month"><h6>7 months ago</h6></div>
+                    </a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <p>Tags</p>
+        <a href="#">Research</a><a href="#">Tips</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
   <a href="#"><i class="fas fa-angle-up progressCounter fa-2x arrow" id="arrow"></i></a>
-
-    <section class="first-section">
+    <section class="first-section" id="responsive-hide">
         <div class="navbar">
           <!-- logo -->
           <div class="logo-div">
@@ -519,6 +565,18 @@
      <a href="https://twitter.com/beaconsai"><i class="fab fa-twitter fa-2x twitter"></i></a>
       <p>Javascript license information</p>
   </section>
+  <script src="js/overlay-slider.js"></script>
+  <script>
+        function closeMenu(){
+  document.getElementById("navbar").style.height = "0%";
+  document.getElementById('arrow').style.zIndex = '1';
+
+}
+function openMenu(){
+  document.getElementById("navbar").style.height = "100%";
+  document.getElementById('arrow').style.zIndex = '-1';
+}
+  </script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

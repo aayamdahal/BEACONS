@@ -289,7 +289,8 @@
     }  
   
     .blog-pg2-card-container{
-  
+      padding-top: 1rem;
+      grid-template-rows: 1fr;
       .blog-pg2-card-1{
         grid-column: 1 / 7;
       }
@@ -350,7 +351,7 @@
   
       }
     }
-    
+  
     .gliders-prev{
       position: absolute;
       top: 230px;
@@ -608,13 +609,17 @@
     margin-top: 2.5rem;
     grid-template-columns: repeat(1, 1fr);
     .left-part{
+      text-align: center;
+      padding-top: 1rem;
       margin: 0rem;
-      width: 100vw;
+      width: 93vw;
       .shopify{
         font-size: 0.8rem;
       }
       p{
-        font-size: 1rem;
+        display: block;
+        width:fit-content;
+        font-size: 1.7rem;
         line-height: 1;
         font-family: $main-font;
         font-weight: 500;
@@ -704,10 +709,8 @@
     }
       .each-influencers{
         padding-left: 2rem;
-        display: grid;
-        align-content: center;
-        align-items: center;  
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        text-align: center;
 
         img:not(:last-child){
           margin-bottom: 1rem;
@@ -772,7 +775,7 @@
 
 
 
-  .footer{
+  .footer-merchants{
     background-color: rgba(204, 204, 204, 0.13);
     padding: 2rem;
     font-family: $main-font;
@@ -869,9 +872,55 @@
 
 
 
+.top-part{
+  padding: 3rem 1.5rem;
+  .top-part-heading{
+    padding-top: 2rem;
+  }
+   
+}
 
 
+.all-posts{
+  padding: 2rem 0rem;
+  .each-post{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid #E6E6E6;
 
+    .post-left-part{
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    .post-right-part{
+      width: 90vw;
+      .enter-post{
+        margin-top: 2rem;
+        a{
+          display: block;
+          text-align: center;
+          width: 90vw;
+          line-height: 2;
+          text-decoration: none;
+          padding: 0.8rem 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+
+          
+        }
+        i{
+          transform: scale(0.8);
+        }        
+      }
+      img{
+        width: 90vw;
+      }
+    }
+  }
+}
 
 
 

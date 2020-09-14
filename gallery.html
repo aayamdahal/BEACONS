@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/gallery.css">
+  <title>Beacons</title>
+</head>
+<body>
+  <div class="container">
+    <!-- first-section -->
+    <section class="first-section">
+      <div class="navbar">
+        <!-- logo -->
+          <a href="#" class="logo"><img src="img/Capture.png" alt=""></a>
+          <a href="index.html" class="logo-only"><img src="/img/logo-only.PNG" alt=""></a>
+        <!-- navbar-items -->
+        <div class="navbar-items">
+          <a href="blogs.html" class="navbar-item">Blog</a>
+          <a href="#" class="navbar-item">Gallery</a>
+          <a href="#" class="navbar-item">Shop</a>
+          <a href="merchants.html"class="navbar-item">Merchants</a>
+          </div>
+      </div>
+        <!-- signin button -->
+        <div class="drop-down-container">
+          <div class="signin">
+            <a href="#">Sign In</a>
+          </div> 
+        </div>
+       
+
+        <!-- menubar -->
+         <div class="dropdown" >
+           <button  onclick="show_hide()" class="button">&#9776;</button>
+           <!-- drop-content -->
+           <div style="display: none;" id="drop-content" >
+            <a href="blogs.html">Blog</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="shop.html">Shop</a>
+             <a href="merchants.html">Merchants</a>         
+           </div>
+         </div>
+    </section>
+
+
+    <div class="gallery-heading">The Gallery</div>
+    <div class="gallery-image-container">
+      <!-- sukiiuser -->
+      <div class="gallery-user">
+        <!-- gallery-user-bio -->
+        <div class="gallery-user-bio">
+          <img src="img/sukiuser-img.jpeg" alt="">
+          <div class="gallery-user-socials">
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-instagram"></i>                
+            <i class="fab fa-twitch"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- second section -->
+<section class="second-section">
+      <div class="circle circle-1"></div>    
+      <div class="circle circle-2"></div>    
+      <div class="circle circle-3"></div>
+     <div class="two-parts">
+
+     
+       </div>
+       <div class="right-part">
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+        <div class="circle-6"></div>
+        </div>
+        </div>      
+    </section>
+
+    
+    <!-- footer-section -->
+    <section class="footer">
+      <div class="footer-first-part">
+        <h5>By invite only.</h5>
+        <form class="footer-form">
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+          <a href="#"><button type="submit" class="btn-submit">Join Waitlist</button></a>
+        </form>
+      </div>
+  <div class="footer-second-part"> <a href="#">Privacy Policy |</a>        
+            <a href="#">Terms of Service |</a>         
+            <a href="#">Contact</a>          
+        </div>     
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

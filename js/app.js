@@ -139,13 +139,13 @@ $.fn.progressScroll = function(options) {
 
 // POST SLIDER (GLIDER.JS LIBRARY)
 new Glider(document.querySelector('.glider'),{
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    }
-  })
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+})
 
 // POST SLIDER (GLIDER.JS LIBRARY) (on mobile screen)
 new Glider(document.querySelector('.gliders'),{
