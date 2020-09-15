@@ -2355,6 +2355,10 @@ a {
   .all-posts .each-post .post-right-part img {
     width: 90vw;
   }
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
@@ -2368,6 +2372,20 @@ a {
   }
   .third-section .third-section-title {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -2596,5 +2614,9 @@ a {
     display: flex;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
