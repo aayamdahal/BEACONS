@@ -22,7 +22,6 @@ $circle-color-secondary: rgba(221, 221, 221, 0.425);
 
 body{
 font-size: 62.5%;
-overflow-Y: hidden;
 overflow-X: hidden;
 }
 
@@ -146,7 +145,7 @@ a{
     font-family: $main-font;
     .gallery-user{
       height: 95vh;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 25px;
       overflow-y:scroll;
       overflow-x: hidden;

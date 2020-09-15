@@ -1636,10 +1636,17 @@ nav .logo {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-heading {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
+  .gallery-heading {
+    text-align: center;
+  }
   .gallery-image-container {
+    padding: 4rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
