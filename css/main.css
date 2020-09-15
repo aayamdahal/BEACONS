@@ -1890,9 +1890,18 @@ a {
     text-align: center;
   }
   .gallery-image-container {
-    padding: 4rem;
+    padding: 1rem;
+    gap: 0rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-image-container .gallery-user,
+  .gallery-image-container .gallery-user-1,
+  .gallery-image-container .gallery-user-2,
+  .gallery-image-container .gallery-user-3,
+  .gallery-image-container .gallery-user-4 {
+    margin: 2rem;
+    height: 70vh;
   }
 }
 

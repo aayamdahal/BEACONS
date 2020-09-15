@@ -30,8 +30,20 @@
     text-align: center;
   }
   .gallery-image-container{
-    padding: 4rem;
+    padding: 1rem;
+    gap: 0rem;
     grid-template-columns: repeat(1,1fr);
+   
+         .gallery-user,
+      .gallery-user-1,
+      .gallery-user-2,
+      .gallery-user-3,
+      .gallery-user-4{
+        margin: 2rem;
+        height: 70vh;
+      
+    
+     }
    }
  
 }
