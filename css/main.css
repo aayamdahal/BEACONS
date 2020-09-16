@@ -597,13 +597,6 @@ a {
   .first-section {
     padding: 0;
   }
-  .blog-image {
-    height: 40vh;
-  }
-  .blog-image .blog-title {
-    font-size: 3rem;
-    line-height: 0.7;
-  }
   .blog-navbar-items .drop-down {
     display: block;
   }
@@ -733,17 +726,6 @@ a {
   .blog-image {
     height: 40vh;
   }
-  .blog-card-content {
-    padding: 2rem 0rem;
-  }
-  .blog-card-content .card-content {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 1rem;
-    margin-left: 2rem;
-    line-height: 1.4;
-  }
   .arrow {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
@@ -802,7 +784,7 @@ a {
     width: 50px;
     position: absolute;
     top: -200px;
-    right: 300px;
+    right: 200px;
   }
   .responsive-cards .res-card h5 {
     font-size: 1.5rem;
@@ -863,14 +845,12 @@ a {
     display: none;
   }
   .page-2-top {
-    height: 40vh;
+    height: 50vh;
   }
   .blog-pg2-card-container {
-    padding: 0 2rem;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (1fr)[4];
-        grid-template-rows: repeat(4, 1fr);
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .blog-pg2-card-container .blog-pg2-card-1 {
     -ms-grid-column: 1;
@@ -1252,7 +1232,7 @@ a {
     padding: 0rem;
   }
   .blog-card-content .card-content {
-    margin-left: 0.5rem;
+    padding-left: 1rem;
     width: 100%;
   }
   .blog-card-content .card-content .card-title {
@@ -1260,7 +1240,7 @@ a {
     margin: 1rem 0rem;
   }
   .blog-card-content .card-content .card-small {
-    margin: 0rem;
+    padding: 1rem 0rem;
     font-size: 0.8rem;
   }
   .blog-card-content .card-content .card-small a {
@@ -1271,7 +1251,7 @@ a {
   }
   .card-content-main .paragraph-list {
     font-size: 0.8rem;
-    margin: 0rem;
+    margin: 2rem;
   }
   .card-content-main .paragraph-list li {
     margin: 0rem 0.5rem;
@@ -1389,7 +1369,8 @@ a {
   }
   .card-title-left h2 {
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 1rem 0.8rem;
+    margin-left: 1rem;
   }
   .card-title-left span {
     font-size: 1rem;
@@ -1401,6 +1382,7 @@ a {
     padding: 0rem;
   }
   .card-tips span {
+    margin-left: 1rem;
     font-size: 1.2rem;
   }
   .card-tips ul li {
@@ -1653,7 +1635,7 @@ a {
     text-align: center;
   }
   .influencers .each-influencers {
-    padding-left: 2rem;
+    padding-left: 0rem;
     display: block;
     text-align: center;
   }
@@ -1677,6 +1659,8 @@ a {
     width: 100vw;
   }
   .marketing .marketing-left-part h4 {
+    width: 90vw;
+    text-align: center;
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     margin-bottom: 1rem;
@@ -1859,6 +1843,23 @@ a {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  #responsive-hide {
+    display: none;
+  }
+  .button {
+    -webkit-transform: scale(2) translateY(-3px);
+            transform: scale(2) translateY(-3px);
+  }
+  .signin {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .third-section .third-section-title {
+    font-size: 1.2rem;
+  }
+  .big-screen {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
@@ -1875,17 +1876,25 @@ a {
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1100px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .gallery-image-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-image-container .gallery-user,
+  .gallery-image-container .gallery-user-1,
+  .gallery-image-container .gallery-user-2,
+  .gallery-image-container .gallery-user-3,
+  .gallery-image-container .gallery-user-4 {
+    margin: 0rem;
+    height: 50vh;
   }
   .gallery-heading {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .gallery-heading {
     text-align: center;
   }
@@ -1917,17 +1926,17 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
+    width: auto;
     padding: 0rem;
     margin-top: 0rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .top-area .left-part {
-    padding-top: 2rem;
+    padding-top: 4rem;
     text-align: center;
-    margin: 2rem 0rem;
-    width: 100vw;
+    margin: 2rem 2rem;
+    width: auto;
   }
   .top-area .left-part .shopify {
     font-size: 1rem;
@@ -1968,6 +1977,9 @@ a {
   .brand-ambassadors .brand-items .each-brand {
     margin: 2rem;
   }
+  .influencers {
+    padding: 1rem;
+  }
   .influencers h4 {
     padding-bottom: 2rem;
     font-size: 1.5rem;
@@ -1977,10 +1989,13 @@ a {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    margin: -2rem;
+    width: 100vw;
   }
   .influencers .each-influencers a {
     margin: 1rem auto;
+  }
+  .influencers .each-influencers img {
+    padding: 0.8rem;
   }
   .marketing {
     width: 100vw;
@@ -1999,6 +2014,7 @@ a {
     width: 50vw;
   }
   .marketing .marketing-left-part h4 {
+    width: 90vw;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
     margin-bottom: 1.5rem;
@@ -2131,8 +2147,225 @@ a {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .gallery-image-container {
+}
+
+@media screen and (min-width: 601px) and (max-width: 819px) {
+  .first-section {
+    display: -webkit-box;
+  }
+  .overlay {
+    padding: 1rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+  }
+  .overlay .three-dots {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 0rem 1rem;
+  }
+  .overlay img {
+    margin: 0rem 1rem;
+  }
+  .menu-content .top-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-content .top-part a {
+    font-family: "Poppins", sans-serif;
+    color: #ccc;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 0.8;
+  }
+  .blog-image {
+    height: 40vh;
+  }
+  .blog-image .blog-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .small-screen {
+    display: none;
+  }
+  .glider-next {
+    right: -8px;
+  }
+  .glider-prev {
+    left: -8px;
+  }
+  .blog-card-content {
+    padding: 1rem 0rem;
+  }
+  .blog-card-content .card-content {
+    padding: 1rem;
+    margin-left: 0rem;
+    line-height: 1.4;
+    width: 100vw;
+  }
+  .card-content-main {
+    padding: 1rem;
+  }
+  .logo {
+    display: none;
+  }
+  .top-area {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .top-area .left-part {
+    width: 90vw;
+  }
+  .changelog-navbar {
+    overflow: visible;
+  }
+  .changelog-navbar .changelog-btn {
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    width: 98vw;
+    right: 0;
+    top: 55px;
+    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+    text-align: center;
+  }
+  .menu a {
+    width: 100%;
+    display: block !important;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+  .show {
+    -webkit-animation: dropdrop ease 0.5s;
+            animation: dropdrop ease 0.5s;
+    max-height: 550px;
+  }
+  @-webkit-keyframes dropdrop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-200px);
+              transform: translateY(-200px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes dropdrop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-200px);
+              transform: translateY(-200px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  .overlay {
+    padding: 1rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+  }
+  .overlay .three-dots {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 0rem 1rem;
+  }
+  .overlay img {
+    margin: 0rem 1rem;
+  }
+  .menu-content .top-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-content .top-part a {
+    font-family: "Poppins", sans-serif;
+    color: #ccc;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 0.8;
+  }
+  .influencers {
+    padding: 0rem;
+  }
+  .influencers .each-influencers {
+    padding-left: 3rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .influencers .each-influencers img {
+    margin-bottom: 1.5rem;
+  }
+  .brand-ambassadors .brand-items {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .marketing {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .marketing .marketing-left-part h4 {
+    text-align: center;
+  }
+  .marketing .marketing-right-part {
+    width: 90vw;
+  }
+  .top-area .right-part {
+    width: 100vw;
+  }
+  .top-area .right-part .shopify-img {
+    display: block;
+    margin: 0 auto;
+  }
+  .panel-primary {
+    padding: 1rem 1.5rem;
+  }
+  .off {
+    left: 69px;
+    top: 90px;
   }
 }

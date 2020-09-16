@@ -343,7 +343,6 @@ a{
 
     .gallery-user-3{
       height: 95vh;
-
       padding: 1rem;
       border-radius: 25px;
       overflow-y:scroll;
@@ -423,13 +422,13 @@ a{
         font-family: $secondary-font;
         position: relative;
         display: inline-block;
-        font-size: 13px;
+        font-size: 10px;
         box-sizing: border-box;
       
       }
       input[type="email"]{
         font-family: $secondary-font;
-        width: 7rem;
+        width: 5rem;
         height: 2.8rem;
         outline: none;
       }
@@ -449,6 +448,9 @@ a{
         transition: ease 0.3s;  
     
       }
+      form{
+        text-align: center;
+      }
     }
 
 
@@ -456,7 +458,6 @@ a{
 
     .gallery-user-4{
       height: 95vh;
-
       padding: 1rem;
       border-radius: 25px;
       overflow-y:scroll;
@@ -525,6 +526,7 @@ a{
       }
    
       form{
+        text-align: center;
         padding: 1rem 0rem;
         padding-left: 0.2rem;
       }
@@ -591,60 +593,7 @@ a{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -735,59 +684,6 @@ a{
     background: #ccc;
     border-radius: 85px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

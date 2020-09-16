@@ -112,6 +112,7 @@
       }
   
       .dropdown{
+      
         margin-left: 8rem;
         transform: rotate(90deg);
       }
@@ -315,7 +316,7 @@
       padding: 0rem;
   
       .card-content{
-        margin-left: 0.5rem;
+        padding-left:1rem;
         width: 100%;
   
         .card-title{
@@ -323,8 +324,8 @@
           margin: 1rem 0rem;
         }
         .card-small{
-            margin: 0rem;
-            font-size: 0.8rem;
+          padding: 1rem 0rem;
+          font-size: 0.8rem;
           a{
             font-size: 0.8rem;
           }
@@ -337,7 +338,7 @@
        }
        .paragraph-list{
         font-size: 0.8rem;
-        margin: 0rem;
+        margin: 2rem;
     
         li{
           margin: 0rem 0.5rem;
@@ -453,7 +454,8 @@
   
     h2{
       font-size: 1.2rem;
-      padding: 0.5rem;
+      padding: 1rem 0.8rem;
+      margin-left: 1rem;
     }
     span{
       font-size: 1rem;
@@ -467,6 +469,7 @@
    .card-tips{
     padding: 0rem;
     span{
+      margin-left: 1rem;
       font-size: 1.2rem;
     }
     ul li{
@@ -708,7 +711,7 @@
     
     }
       .each-influencers{
-        padding-left: 2rem;
+        padding-left: 0rem;
         display: block;
         text-align: center;
 
@@ -735,6 +738,8 @@
     .marketing-left-part{
       width: 100vw;
       h4{
+        width: 90vw;
+        text-align: center;
         font-size: 1.5rem;
         font-family: $main-font;
         margin-bottom: 1rem;
@@ -925,18 +930,25 @@
 .gallery-image-container{
   grid-template-columns: repeat(1,1fr);
  }
+#responsive-hide{
+  display: none;
+}
 
+.button{
+  transform: scale(2) translateY(-3px);
+}
+.signin{
+  transform: scale(1);
+}
 
+.third-section{
 
+  .third-section-title{
+    font-size: 1.2rem;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+.big-screen{
+  display: none;
+}
   } 

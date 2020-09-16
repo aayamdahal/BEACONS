@@ -243,7 +243,7 @@ a{
       margin: 1rem;
     }
     .card-small{
-
+      color: #2C2FE6;
         margin: 1rem;
         font-family: $secondary-font;
         font-size: 1rem;
@@ -253,7 +253,7 @@ a{
         font-weight: 700;
         font-family: $secondary-font;
         font-size: 1.2rem;
-        color: $each-color;
+        color: #2C2FE6;
       }
     }
     
@@ -739,3 +739,4 @@ cursor: pointer;
 @import 'media(ipad)';
 @import 'media2(iphone)';
 @import 'media3';
+

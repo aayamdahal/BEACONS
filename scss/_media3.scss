@@ -15,17 +15,27 @@
   }
   
 }
-@media screen and (min-width: 801px) and (max-width: 1100px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .gallery-image-container{
-
     grid-template-columns: repeat(2,1fr);
+    
+    .gallery-user,
+    .gallery-user-1,
+    .gallery-user-2,
+    .gallery-user-3,
+    .gallery-user-4{
+      margin: 0rem;
+      height: 50vh;
+    
+  
+   }
    }
    .gallery-heading{
     text-align: center;
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .gallery-heading{
     text-align: center;
   }
@@ -57,16 +67,16 @@
   text-align: left;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: auto;
   padding: 0rem;
   margin-top: 0rem;
   grid-template-columns: repeat(1, 1fr);
 
   .left-part{
-    padding-top: 2rem;
+    padding-top: 4rem;
     text-align: center;
-    margin: 2rem 0rem;
-    width: 100vw;
+    margin: 2rem 2rem;
+    width: auto;
 
 
     .shopify{
@@ -116,7 +126,7 @@
 }
 
 .influencers{
-
+  padding: 1rem;
   h4{
     padding-bottom: 2rem;
     font-size: 1.5rem;
@@ -126,9 +136,13 @@
     .each-influencers{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin: -2rem;
+      width: 100vw;
       a{
         margin: 1rem auto;
+      }
+      img{
+        padding: 0.8rem;
+
       }
     }
 }
@@ -146,6 +160,7 @@
   .marketing-left-part{
     width: 50vw;
     h4{
+      width: 90vw;
       font-size: 2rem;
       font-family: $main-font;
       margin-bottom: 1.5rem;
@@ -268,11 +283,287 @@
 }
 
 
-.gallery-image-container{
-  grid-template-columns: repeat(2,1fr);
- }
+  }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // WORKING ON THIS
+
+  @media screen and (min-width: 601px) and (max-width: 819px) {
+    .first-section{
+      display: -webkit-box;
+    }
+     .overlay{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+  
+      .three-dots{
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        margin: 0rem 1rem;
+      }
+      img{
+        margin: 0rem 1rem;
+      }
+   
+  }
+  
+  .menu-content{
+    .top-part{
+      display: flex;
+      flex-direction: column;
+      
+      a{
+        font-family: $main-font;
+        color: #ccc;
+        font-size: 1rem;
+        margin: 10px;
+        line-height: 0.8;
+      }
+    }
+  
+  }
+
+  .blog-image{
+    height: 40vh;
+  
+    .blog-title{
+      font-size: 2rem;
+      line-height: 1;
+    }
+    
+  }
+  .small-screen{
+    display: none;
+  }
+
+  .glider-next{
+    right: -8px;
+    }
+    .glider-prev{
+      left: -8px;
+    }
+
+    .blog-card-content{
+      padding: 1rem 0rem;
+    
+        .card-content{
+        padding: 1rem;
+        margin-left: 0rem;
+        line-height: 1.4;
+        width: 100vw;
+        }
+          
+      }
+
+    .card-content-main{
+      padding: 1rem;
+    }
+
+
+    .logo{
+      display: none;
+    }
+    .top-area{
+      grid-template-columns: repeat(1, 1fr);
+
+      .left-part{
+        width: 90vw;
+      }
+    }
+
+    // merchant navbar
+  .changelog-navbar{
+    overflow: visible;
+  
+    .changelog-btn{
+      transform: translateX(-25px);
+      display: block;
+      cursor: pointer;
+    }
+  }
+  .menu{
+    width: 98vw;
+    right: 0;
+    top: 55px;
+    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+    text-align: center;
+    a{
+      width: 100%;
+      display: block !important;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  
+  .show{
+    animation: dropdrop ease 0.5s;
+    max-height: 550px;
+  }
+  @keyframes dropdrop {
+  0%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+    }
+  
+  
+  .overlay{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+  
+      .three-dots{
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        margin: 0rem 1rem;
+      }
+      img{
+        margin: 0rem 1rem;
+      }
+   
+  }
+  
+  .menu-content{
+    .top-part{
+      display: flex;
+      flex-direction: column;
+      
+      a{
+        font-family: $main-font;
+        color: #ccc;
+        font-size: 1rem;
+        margin: 10px;
+        line-height: 0.8;
+      }
+    }
+  
+  }
+  .influencers{
+    padding: 0rem;
+
+    .each-influencers{
+      padding-left: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      img{
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .brand-ambassadors{
+    .brand-items{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .marketing{
+    grid-template-columns: repeat(1, 1fr);
+
+    .marketing-left-part{
+      h4{
+        text-align: center;
+      }
+    }
+    .marketing-right-part{
+      width: 90vw;
+    }
+  }
+  .top-area{
+    .right-part{
+      width: 100vw;
+
+      .shopify-img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .panel-primary{
+    padding: 1rem 1.5rem;
+  }
+  .off{
+    left: 69px;
+    top: 90px;
+  }
   }
