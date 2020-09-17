@@ -1308,8 +1308,6 @@ a {
   }
   .blog-pg2-card-container {
     padding: 1rem 2rem;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
   }
   .blog-pg2-card-container .blog-pg2-card-1 {
     -ms-grid-column: 1;
@@ -1496,8 +1494,8 @@ a {
   }
   .first-section {
     padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-bottom: 3.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1976,7 +1974,12 @@ a {
   .overlay img {
     margin: 0rem 1rem;
   }
+  .menu-content {
+    padding: 1rem;
+    top: 2%;
+  }
   .menu-content .top-part {
+    padding: 1rem 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1991,6 +1994,12 @@ a {
     font-size: 1rem;
     margin: 10px;
     line-height: 0.8;
+  }
+  .menu-content .middle-part .container {
+    padding: 0rem;
+  }
+  .menu-content .middle-part .container .carousel {
+    height: 38vh;
   }
   .top-area {
     padding: 3rem 1rem;
@@ -2322,41 +2331,16 @@ a {
   .big-screen {
     display: none;
   }
-}
-
-@media screen and (min-width: 500px) and (max-width: 600px) {
-  .button {
-    -webkit-transform: scale(2) translateY(-3px);
-            transform: scale(2) translateY(-3px);
+  .footer .footer-container {
+    display: -ms-grid;
+    display: grid;
+    text-align: left;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
-  .signin {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  nav .logo {
+    display: block;
   }
-  .third-section .third-section-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1000px) {
-  .gallery-image-container {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .gallery-image-container .gallery-user,
-  .gallery-image-container .gallery-user-1,
-  .gallery-image-container .gallery-user-2,
-  .gallery-image-container .gallery-user-3,
-  .gallery-image-container .gallery-user-4 {
-    margin: 0rem;
-    height: 50vh;
-  }
-  .gallery-heading {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 600px) {
   .gallery-heading {
     text-align: center;
   }
@@ -2376,8 +2360,26 @@ a {
   }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-image-container .gallery-user,
+  .gallery-image-container .gallery-user-1,
+  .gallery-image-container .gallery-user-2,
+  .gallery-image-container .gallery-user-3,
+  .gallery-image-container .gallery-user-4 {
+    margin: 0rem;
+    height: 65vh;
+  }
+  .gallery-heading {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 601px) and (max-width: 819px) {
-  .first-section {
+  .container .first-section {
     display: -webkit-box;
   }
   .overlay {
@@ -2540,6 +2542,10 @@ a {
   .overlay img {
     margin: 0rem 1rem;
   }
+  .menu-content {
+    padding: 1rem;
+    top: 2%;
+  }
   .menu-content .top-part {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2555,6 +2561,12 @@ a {
     font-size: 1rem;
     margin: 10px;
     line-height: 0.8;
+  }
+  .menu-content .middle-part .container {
+    padding: 0rem;
+  }
+  .menu-content .middle-part .container .carousel {
+    height: 38vh;
   }
   .influencers {
     padding: 0rem;
@@ -2709,5 +2721,175 @@ a {
   }
   nav .logo {
     display: block;
+  }
+  .button {
+    -webkit-transform: scale(2) translateY(-3px);
+            transform: scale(2) translateY(-3px);
+  }
+  .signin {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .third-section .third-section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 999px) {
+  .first-section .blog-navbar-items .drop-down {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .gallery-image-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1100px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  #arrow {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .card-gif-scaled {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .overlay {
+    display: none;
+  }
+  .logo-only {
+    display: none;
+  }
+  .container {
+    padding: 1rem 2rem;
+  }
+  .container .first-section {
+    padding-bottom: 0rem;
+  }
+  .container .first-section .navbar .navbar-items a {
+    padding: 0rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  .container .first-section .dropdown {
+    display: none;
+  }
+  .container .second-section {
+    padding: 2rem 1rem;
+  }
+  .container .second-section .waitlist-btn {
+    padding: 2rem 0rem;
+  }
+  .container .second-section .waitlist-btn input[type="email"] {
+    width: 14rem;
+    height: 3rem;
+  }
+  .container .second-section .waitlist-btn input[type="submit"] {
+    width: 8rem;
+  }
+  .container .third-section .third-section-title {
+    width: 100vw;
+  }
+  .container .third-section .third-section-picture {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .container .footer {
+    padding: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .footer input[type="email"] {
+    margin: 0rem 1rem;
+  }
+  .container .footer .footer-second-part a {
+    margin: 1rem 0;
+  }
+  .small-screen {
+    display: none;
+  }
+  .big-screen {
+    display: none;
+  }
+  .card-avatar-1 {
+    display: none;
+  }
+  .changelog-navbar .menu {
+    right: 94px;
+  }
+  .brand-ambassadors .brand-items {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .marketing {
+    padding: 2rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .marketing .marketing-left-part {
+    text-align: center;
+    width: auto;
+  }
+  .marketing .marketing-left-part h4 {
+    text-align: center;
+  }
+  .marketing .marketing-right-part {
+    width: 90vw;
+  }
+  .marketing .marketing-right-part .logos-shopify {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .influencers {
+    padding: 0rem;
+  }
+  .influencers .each-influencers {
+    padding-left: 3rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .influencers .each-influencers img {
+    margin-bottom: 1.5rem;
+  }
+  .panel-primary {
+    padding: 1.5rem 3rem;
+  }
+  .panel-primary .off {
+    left: 92px;
+    top: 90px;
+  }
+  .top-part {
+    padding: 2rem 1rem;
+  }
+  .all-posts .each-post {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .all-posts .each-post .post-left-part {
+    padding-bottom: 1rem;
+  }
+  .all-posts .each-post .post-right-part {
+    text-align: center;
+  }
+  .top-part .top-part-heading {
+    padding-top: 4rem;
+  }
+  .blog-image {
+    height: 55vh;
+  }
+  .blog-image .blog-title {
+    width: 90vw;
   }
 }
