@@ -27,7 +27,7 @@
       margin: 0rem;
       height: 50vh;
     
-  
+
    }
    }
    .gallery-heading{
@@ -57,233 +57,6 @@
    }
  
 }
-
-
-@media screen and (min-width: 580px) and (max-width: 800px) {
-  .logo{
-    display: none;
-  }
-.top-area{
-  text-align: left;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
-  padding: 0rem;
-  margin-top: 0rem;
-  grid-template-columns: repeat(1, 1fr);
-
-  .left-part{
-    padding-top: 4rem;
-    text-align: center;
-    margin: 2rem 2rem;
-    width: auto;
-
-
-    .shopify{
-      font-size: 1rem;
-    }
-    p{
-      font-size: 1.5rem;
-    }
-    .shopify-desc{
-      font-size: 1rem;
-    }
-  }
-  .right-part{
-    text-align: center;
-    width: 100vw;
-  }
-  
-}
-
-
-.brand-ambassadors{
-  padding: 4rem;
-  text-align: center;
-  h4{
-    font-size: 2rem;
-    font-family: $main-font;
-  }
-  p{
-    font-family: $main-font;
-    font-size: 1rem;
-  }
-
-  .brand-items{
-    padding: 2rem;
-    grid-template-columns: repeat(1, 1fr);
-
-    h4{
-      font-size: 1rem;
-    }
-    p{
-      font-size: 1rem;
-    }
-    .each-brand{
-      margin: 2rem;
-    }
-  }
-}
-
-.influencers{
-  padding: 1rem;
-  h4{
-    padding-bottom: 2rem;
-    font-size: 1.5rem;
-  
-  }
-
-    .each-influencers{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 100vw;
-      a{
-        margin: 1rem auto;
-      }
-      img{
-        padding: 0.8rem;
-
-      }
-    }
-}
-
-
-
-.marketing{
-  width: 100vw;
-  padding: 4rem;
-  display: grid;
-  align-items: center;
-
-  grid-template-columns: repeat(2, 1fr);
-  align-content: center;
-  .marketing-left-part{
-    width: 50vw;
-    h4{
-      width: 90vw;
-      font-size: 2rem;
-      font-family: $main-font;
-      margin-bottom: 1.5rem;
-    }
-  }
-}
-
-
-.marketing{
-  width: 100vw;
-  padding: 2rem;
-  display: grid;
-
-  grid-template-columns: repeat(1, 1fr);
-  align-content: center;
-  .marketing-left-part{
-    text-align: center;
-    width: 100vw;
-  }
-
-  .marketing-right-part{
-    width: 90vw;
-    h6{
-      font-size: 1rem;
-      font-weight: 600;
-      font-family: $main-font;
-    }
-    p{
-      font-size: 0.8rem;
-      font-family: $main-font;
-      font-weight: 300;
-    }
-    div{
-      margin: 1rem;
-    }
-    .logos-shopify{
-      display: flex;
-      align-content: center;
-      gap: 0rem;
-      .shopify-logo-marketing-2{
-        margin: -2rem;
-        transform: scale(0.5);
-      }
-      
-    }   
-  }
-}
-
-
-.footer{
-  padding: 3rem;
-  a{
-    color: black;   
-     text-decoration: none;
-}
-  .footer-container{
-  display: grid;
-  text-align: left;
-  grid-template-columns: repeat(1, 1fr);
-  }
-  
-  .company-info{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-   h4{
-     padding: 0rem;
-   }
-  }
-  .company-resources{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-
-  }
-  .company-support{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-   
-  }
-  .backedby{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    a{
-      text-decoration: underline;
-    }
-    .socials{
-      
-      i{
-        transform: scale(1.3);   
-        margin: 0.5rem
-      }
-    }
-    
-  }
-
-}
-
-.top-part{
-  padding: 2rem 2rem;
-  .all-posts{
-    padding: 1rem 0rem;
-    .each-post{
-      grid-template-columns: repeat(1, 1fr);
-
-      .post-left-part{
-        font-size: 1rem;
-      }
-     
-      .post-right-part{
-        img{
-          display: flex;
-          transform: scale(0.7);
-        }
-      }
-    }
-  }
-}
-
-
-  }
 
 
 
@@ -533,29 +306,47 @@
     }
   }
   .brand-ambassadors{
+    padding: 2rem;
     .brand-items{
       grid-template-columns: repeat(1, 1fr);
     }
   }
   .marketing{
+    padding: 2rem;
     grid-template-columns: repeat(1, 1fr);
 
     .marketing-left-part{
+      text-align: center;
+      width: auto;
       h4{
         text-align: center;
       }
     }
     .marketing-right-part{
       width: 90vw;
+
+      .logos-shopify{
+        display: flex;
+        justify-content: center;
+      }
     }
   }
   .top-area{
+    padding: 2rem;
     .right-part{
       width: 100vw;
 
       .shopify-img{
         display: block;
         margin: 0 auto;
+      }
+    }
+
+    .left-part{
+      .shopify-logo{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.8rem;
       }
     }
   }
@@ -566,4 +357,102 @@
     left: 69px;
     top: 90px;
   }
+
+  .footer-merchants{
+    padding: 3rem;
+    a{
+      color: black;   
+       text-decoration: none;
   }
+    .footer-container{
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .company-info{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+     h4{
+       padding: 0rem;
+     }
+    }
+    .company-resources{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .company-support{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .backedby{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      a{
+        text-decoration: underline;
+      }
+      .socials{
+        
+        i{
+          transform: scale(1.3);   
+          margin: 0.5rem
+        }
+      }
+      
+    }
+  
+  }
+ 
+  .footer{
+    .footer-container{
+      display: grid;
+      text-align: left;
+      grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  
+
+    .top-part{
+      padding: 2rem 1rem;
+    }
+    .all-posts{
+      .each-post{
+        grid-template-columns: repeat(1, 1fr);
+        .post-left-part{
+          padding-bottom: 1rem;
+        }
+        .post-right-part{
+          text-align: center;
+        }
+      }
+    }
+    .top-part{
+      .top-part-heading{
+        padding-top: 4rem;
+        
+      }
+    }
+
+    nav{
+      .logo{
+        display: block;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+ 
