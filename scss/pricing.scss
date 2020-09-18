@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb:hover{
   background: $main-color;
 }
 .changelog-navbar{
+  transition: all 0.7s;
   position: fixed;
   height: 80px;
   overflow: hidden;
@@ -336,8 +337,8 @@ body::-webkit-scrollbar-thumb:hover{
 .off{
   position: absolute;
   z-index:  100;
-  left: 210px;
-  top: 5px;
+  left: 122px;
+  top: 76px;
   width: max-content;
   font-size: 0.8rem;
   background-color: #000;

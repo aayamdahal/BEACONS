@@ -41,6 +41,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .changelog-navbar {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   position: fixed;
   height: 80px;
   overflow: hidden;
@@ -270,17 +272,142 @@ body::-webkit-scrollbar-thumb:hover {
 .influencers .each-influencers {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.influencers .each-influencers img {
-  border-radius: 25px;
+.influencers .each-influencers .individual-influencer-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vh;
+  padding: 0.5rem 1.2rem;
+  border-radius: 35px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(35%, rgba(0, 0, 0, 0.2))), url(/img/influencer-1.png) no-repeat center center/cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 35%), url(/img/influencer-1.png) no-repeat center center/cover;
+}
+
+.influencers .each-influencers .individual-influencer-1 .individual-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.influencers .each-influencers .individual-influencer-1 .individual-hits {
+  color: #d1e3ff;
+  font-size: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.influencers .each-influencers .individual-influencer-2 {
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vh;
+  padding: 0.5rem 1.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(35%, rgba(0, 0, 0, 0.2))), url(/img/influencer-2.png) no-repeat center center/cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 35%), url(/img/influencer-2.png) no-repeat center center/cover;
+}
+
+.influencers .each-influencers .individual-influencer-2 .individual-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.influencers .each-influencers .individual-influencer-2 .individual-hits {
+  color: #d1e3ff;
+  font-size: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.influencers .each-influencers .individual-influencer-3 {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1.2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 35px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(35%, rgba(0, 0, 0, 0.2))), url(/img/influencer-3.png) no-repeat center center/cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 35%), url(/img/influencer-3.png) no-repeat center center/cover;
+}
+
+.influencers .each-influencers .individual-influencer-3 .individual-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.influencers .each-influencers .individual-influencer-3 .individual-hits {
+  color: #d1e3ff;
+  font-size: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.influencers .each-influencers .individual-influencer-4 {
+  height: 40vh;
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1.2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(35%, rgba(0, 0, 0, 0.2))), url(/img/influencer-4.png) no-repeat center center/cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 35%), url(/img/influencer-4.png) no-repeat center center/cover;
+}
+
+.influencers .each-influencers .individual-influencer-4 .individual-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.influencers .each-influencers .individual-influencer-4 .individual-hits {
+  color: #d1e3ff;
+  font-size: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.influencers .each-influencers a {
+  text-decoration: none;
+}
+
+.influencers .each-influencers .influencer-margin {
+  margin-bottom: 1rem;
 }
 
 .marketing {
@@ -1004,7 +1131,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1614,7 +1741,6 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
   }
   .influencers .each-influencers {
-    padding-left: 0rem;
     display: block;
     text-align: center;
   }
@@ -2256,7 +2382,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1100px) {
+@media screen and (min-width: 820px) and (max-width: 1150px) {
   html, body {
     overflow-x: hidden;
   }
@@ -2273,6 +2399,16 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .logo-only {
     display: none;
+  }
+  .second-section .two-parts {
+    width: 100vw;
+  }
+  .second-section .two-parts .left-part {
+    padding-top: 3rem;
+    width: 60vw;
+  }
+  .second-section .two-parts .right-part {
+    width: 40vw;
   }
   .container {
     padding: 1rem 2rem;
@@ -2376,7 +2512,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .panel-primary .off {
     left: 92px;
-    top: 90px;
+    top: 88px;
   }
   .top-part {
     padding: 2rem 1rem;
@@ -2399,5 +2535,15 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .blog-image .blog-title {
     width: 90vw;
+  }
+  .blog-card-top-2 {
+    display: none;
+  }
+  .blog-post {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .page-2-top-2 {
+    display: none;
   }
 }

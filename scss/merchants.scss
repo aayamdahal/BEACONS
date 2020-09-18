@@ -42,6 +42,7 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 .changelog-navbar{
+transition: all 0.7s;
  position: fixed;
  height: 80px;
  overflow: hidden;
@@ -219,15 +220,105 @@ body::-webkit-scrollbar-thumb:hover{
 
     .each-influencers{
       display: grid;
-      align-content: center;
-      align-items: center;
       grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+     .individual-influencer-1{
+       display: flex;
+       align-items: flex-end;
+       justify-content: space-between;
+       height: 40vh;
+       padding: 0.5rem 1.2rem;
+       border-radius: 35px;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-1.png) no-repeat center center/cover;
 
-      img{
-        border-radius: 25px;
+       .individual-name{
+         font-family: $main-font;
+         font-size: 1rem;
+         color: white;
+        font-weight: 400;
+       }
+       .individual-hits{
+         color:#d1e3ff;
+         font-size: $main-font;
+         font-size: 1rem;
+         font-weight: 600;
+
+       }
+
+     }
+     .individual-influencer-2{
+      border-radius: 35px;
+      display: flex;
+       align-items: flex-end;
+       justify-content: space-between;
+       height: 40vh;
+       padding: 0.5rem 1.2rem;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-2.png) no-repeat center center/cover;
+
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color: white;
+        font-weight: 400;
       }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
 
-    }
+      }
+     }
+     .individual-influencer-3{
+      height: 40vh;
+       display: flex;
+       padding: 0.5rem 1.2rem;
+       align-items: flex-end;
+       justify-content: space-between;
+       border-radius: 35px;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-3.png) no-repeat center center/cover;
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color: white;
+        font-weight: 400; 
+      }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+     }
+     .individual-influencer-4{
+      height: 40vh;
+       border-radius: 35px;
+       display: flex;
+       padding: 0.5rem 1.2rem;
+       align-items: flex-end;
+       justify-content: space-between;
+       background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 35%),url(/img/influencer-4.png) no-repeat center center/cover;
+       .individual-name{
+        font-family: $main-font;
+        font-size: 1rem;
+        color:  white;
+        font-weight: 400;
+      }
+      .individual-hits{
+        color:#d1e3ff;
+        font-size: $main-font;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+     }
+     a{
+       text-decoration: none;
+     }
+     .influencer-margin{
+       margin-bottom: 1rem;
+     }
+   }
 }
 
 .marketing{
