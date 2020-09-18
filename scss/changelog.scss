@@ -12,7 +12,6 @@ $circle-color-secondary-main: #ddd;
 $circle-color-secondary: rgba(221, 221, 221, 0.425);
 
 
-
 *{
   margin: 0;
   padding: 0;
@@ -51,9 +50,7 @@ a{
     background-color: none;
     color: black;
     text-decoration: none;
-
-  }
-  
+  }  
 }
 
   nav{
@@ -130,11 +127,8 @@ a{
           }
         }
       }
-    }
-    
-    
+    }  
   }
-
 
   .all-posts{
     padding: 2rem 0rem;
@@ -149,8 +143,7 @@ a{
         
         font-size: 0.3rem;
         font-family: 'Open Sans Condensed', sans-serif;
-
-    
+  
         .flag-part{
           display: flex;
           align-items: center;
@@ -224,8 +217,7 @@ a{
               font-weight: 400;
               text-decoration: underline;
             }
-          }
-          
+          }          
         }
       }
     }
@@ -239,11 +231,10 @@ a{
  
   .center{
     padding-top: 1rem;
-  display: flex;
-  justify-content: center;
+     display: flex;
+    justify-content: center;
   }
 
-  
 // MEDIA QUERIES
 @import 'media(ipad)';
 @import 'media2(iphone)';

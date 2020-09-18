@@ -255,8 +255,7 @@ a{
         font-size: 1.2rem;
         color: #2C2FE6;
       }
-    }
-    
+    }  
   }
 }
 
@@ -264,11 +263,10 @@ a{
 
   p{   
      margin-bottom: 1rem;
-        font-family: $secondary-font;
-        font-size: 1.2rem;
-        color: $each-color;
-  }
-  
+     font-family: $secondary-font;
+     font-size: 1.2rem;
+    color: $each-color;
+  }  
 }
 
 .card-tips{

@@ -268,8 +268,7 @@ a{
         font-size: 1.2rem;
         color: #2729B8;
       }
-    }
-    
+    }   
   }
 }
 
@@ -615,9 +614,6 @@ blockquote cite:before {
 content: "\2014 \2009";
 }
 
-
-
-
 // for dropdown
 .menu{
   background: #000;
@@ -765,8 +761,7 @@ h4{
     font-weight: 300;
     color: #808080;
     font-family: $main-font;
-
-}
+  }
 }
 .menu-container .closebtn{
 transform: scale(0.6);
@@ -782,14 +777,12 @@ z-index: 1;
 cursor: pointer;
 }
 
-
 .carousel {
   width: 90vw;
   height: 40vh;
   // background: #808080;
   position: relative;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 .carousel .track {
   position: absolute;
@@ -797,8 +790,6 @@ cursor: pointer;
   left: 20px;
   display: inline-flex;
   touch-action: none;
-
-
 }
 
 .carousel .track .card-overlay {

@@ -274,7 +274,6 @@ a{
   
   }
 }
-
 // rest of the cards
 .blog-pg2-card-container{ 
   background-color: $bg-color;
@@ -418,7 +417,6 @@ a{
     animation: animate 0.5s ease;
     display: block;
   }
-
 }
 // articles style of drop down
 .articles-container{
@@ -471,8 +469,7 @@ a{
       font-family: $main-font;
       margin: 1rem 0rem;
       text-align: left;
-    }
-    
+    }   
   }
  .article-tags{
    font-size: 1rem;
@@ -496,7 +493,6 @@ a{
  }
 }
 
-
 @keyframes animate{
   0%{
     opacity: 0;
@@ -506,7 +502,6 @@ a{
     opacity: 1;
   }
 }
-
 
 // for dropdown
 .menu{
@@ -531,7 +526,6 @@ a{
     animation: animate 0.5s ease;
     display: block;
   }
-
 }
 // articles style of drop down
 .articles-container{
@@ -584,8 +578,7 @@ a{
       font-family: $main-font;
       margin: 1rem 0rem;
       text-align: left;
-    }
-    
+    }    
   }
  .article-tags{
    font-size: 1rem;
@@ -608,7 +601,6 @@ a{
    }
  }
 }
-
 
 @keyframes animate{
   0%{
@@ -649,14 +641,14 @@ width: 100%;
 margin-top: 30px;
 
 h4{
-  margin-top: 2rem;
-  padding-left: 0.5rem;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
     font-size: 1rem;
     font-weight: 300;
     color: #808080;
     font-family: $main-font;
 
-}
+  }
 }
 .menu-container .closebtn{
 transform: scale(0.6);
@@ -671,8 +663,6 @@ border: white 3px solid;
 z-index: 1;
 cursor: pointer;
 }
-
-
 .carousel {
   width: 90vw;
   height: 40vh;
@@ -687,8 +677,6 @@ cursor: pointer;
   left: 20px;
   display: inline-flex;
   touch-action: none;
-
-
 }
 
 .carousel .track .card-overlay {
@@ -755,8 +743,6 @@ cursor: pointer;
     margin: 1rem;
   }
 }
-
-
 
 // MEDIA QUERIES
 @import 'media(ipad)';

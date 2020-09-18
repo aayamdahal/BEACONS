@@ -257,8 +257,7 @@ a{
         font-family: $secondary-font;
         font-size: 1.2rem;
       }
-    }
-    
+    }  
   }
 }
 .card-content-main{
@@ -567,7 +566,6 @@ opacity: 0;
  }
 }
 
-
 @keyframes animate{
   0%{
     opacity: 0;
@@ -713,7 +711,6 @@ cursor: pointer;
     margin: 1rem;
   }
 }
-
 
 // MEDIA QUERIES
 @import 'media(ipad)';

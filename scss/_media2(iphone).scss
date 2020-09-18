@@ -52,12 +52,11 @@
       width: 9rem;
     }
     .left-part{
-      width: 150vw;
       display: flex;
       justify-content: center;
       text-align: center;
       .main-heading{
-        width: 66vw;
+        width: 75vw;
         line-height: 1.2;
         margin-top: 3rem;
         text-align: center;
@@ -65,9 +64,21 @@
         font-size: 2.2rem;
       }
       .main-heading-block{
+        width: 62vw;
         text-align: center;
         margin: 0 auto;
       }
+      }
+      .two-parts{
+        grid-template-columns: repeat(1, 1fr);
+        .right-part{
+          padding-bottom: 1rem;
+          justify-content: center;
+          .gallery-user{
+            height: 69vh;
+            width: 70vw;
+          }
+        }
       }
     }
   
@@ -464,10 +475,9 @@
     }
     ul li{
       font-size: 1rem;
-    }
-  
+    } 
    }
-  
+
    .card-tips{
     padding: 0rem;
     span{
@@ -481,9 +491,7 @@
     .followers-see{
     padding: 1rem 0rem;
     font-size: 1.2rem;
-    }
-  
-   
+    }  
    }
   .card-gif-scaled{
     transform: scale(0.8);
@@ -567,11 +575,8 @@
   100%{
     opacity: 1;
     transform: translateY(0px);
-  }
-  
     }
-  
-  
+ }
   .overlay{
     padding: 1rem 0rem;
     display: flex;
@@ -588,10 +593,8 @@
       }
       img{
         margin: 0rem 1rem;
-      }
-   
+    }  
   }
-  
   .menu-content{
     padding: 1rem;
     top: 2%;
@@ -618,7 +621,6 @@
       }
     }
   }
-
 
   .top-area{
     padding: 3rem 1rem;
@@ -668,10 +670,6 @@
       }
     }
   }
-
-
-
-
   .brand-ambassadors{
     padding: 2rem;
     text-align: center;
@@ -712,7 +710,6 @@
     }
   }
 
-
   .influencers{
     padding: 1rem;
     h4{
@@ -733,11 +730,6 @@
   
       }
   }
-  
-
-
-
-
 
   .marketing{
     width: 100vw;
@@ -787,11 +779,6 @@
       }   
     }
   }
-
-
-
-
-
   .footer-merchants{
     background-color: rgba(204, 204, 204, 0.13);
     padding: 2rem;
@@ -838,19 +825,12 @@
           transform: scale(1.3);   
           margin: 0.5rem
         }
-      }
-      
-    }
-  
+      }      
+    } 
   }
-
-
-
 .panel-primary{
   padding: 1rem 0rem;
-
 }
-
 .table{
   padding: 0rem;
 
@@ -860,7 +840,7 @@
       font-size: 1.4rem;
     }
   }
- 
+
   .btn{
     width: max-content;
     font-size: 0.8rem;
@@ -885,18 +865,12 @@
   top: 88px;
 }
 
-
-
-
-
 .top-part{
   padding: 3rem 1.5rem;
   .top-part-heading{
     padding-top: 2rem;
-  }
-   
+  }  
 }
-
 
 .all-posts{
   padding: 2rem 0rem;
@@ -924,10 +898,8 @@
           text-decoration: none;
           padding: 0.8rem 1rem;
           font-size: 1rem;
-          font-weight: 600;
-
-          
-        }
+          font-weight: 600;      
+         }
         i{
           transform: scale(0.8);
         }        
@@ -989,9 +961,7 @@
       .gallery-user-3,
       .gallery-user-4{
         margin: 2rem;
-        height: 70vh;
-      
-    
+        height: 70vh; 
      }
    }
   } 

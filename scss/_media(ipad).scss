@@ -96,7 +96,7 @@ $each-color: #bbb;
     position: relative
   }
   .container{
-    padding: 1.5rem;
+    padding: 0.8rem;
     // overflow: hidden;
   }
   .logo{
@@ -130,11 +130,6 @@ $each-color: #bbb;
     
   }
 
-  .second-section{
-    .left-part{
-      width:auto;
-    }
-  }
   .waitlist-btn{
     padding: 0;
   }
@@ -219,7 +214,6 @@ $each-color: #bbb;
 }
 
 //BLOGS
-
 .blog-navbar-items{
   .drop-down{
     display: block;
@@ -313,20 +307,16 @@ $each-color: #bbb;
       grid-row: 5 / 6;
     }
   }
-
   .footer{
     p{
       margin: 1rem;
     }
   }
-
 // featuring a video
 
 .blog-image{
   height: 40vh;
 }
-
-
   .arrow{
     transform: scale(0.6);
   }
@@ -413,14 +403,8 @@ $each-color: #bbb;
       border: none;
       transform: scale(1.5);
       background-color: transparent;
-    }
-    
-  
-    
+    } 
   }
-
-
-  
   .res-btn{
     color: #0d60ff;
     background-color: black;
@@ -469,10 +453,6 @@ $each-color: #bbb;
  .blog-page-2{
    padding: 2rem;
  }
- 
-
-
-
 }
 
 

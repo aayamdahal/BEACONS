@@ -37,7 +37,6 @@ body{
 font-size: 62.5%;
 }
 
-
 // UTILITY 
 a{
   text-decoration: none;
@@ -130,12 +129,11 @@ a{
       }
     }
 
-
     // font awesome icon scale
-    .dropdown{
-    transform: scale(1.5);
-  }
 
+  .dropdown{
+    transform: scale(1.5);
+    }
 
   // BLOG POST SECTION
 
@@ -434,7 +432,6 @@ a{
   }
 }
 
-
 // for dropdown
 .menu{
   background: #000;
@@ -598,8 +595,6 @@ border: white 3px solid;
 z-index: 1;
 cursor: pointer;
 }
-
-
 .carousel {
   width: 90vw;
   height: 40vh;
@@ -614,10 +609,7 @@ cursor: pointer;
   left: 20px;
   display: inline-flex;
   touch-action: none;
-
-
 }
-
 .carousel .track .card-overlay {
   width: 300px;
   height: 300px;
