@@ -2410,9 +2410,27 @@ a {
     height: 70vh;
   }
   .shop-content {
+    padding: 2rem 2rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 20vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 0.8rem;
+  }
+  .shop-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
   }
   .shop-top-area {
     -webkit-box-orient: vertical;
@@ -2431,6 +2449,9 @@ a {
   }
   .shop-content .shop-item .shop-image .add-product {
     width: 50vw;
+  }
+  #shop-heading-sm {
+    font-size: 1.8rem;
   }
 }
 
@@ -2842,6 +2863,19 @@ a {
   .modal .modal-content {
     width: 85vw;
   }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 30vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -3065,5 +3099,18 @@ a {
   }
   .modal .modal-content {
     width: 85vw;
+  }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 45vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 1rem;
   }
 }

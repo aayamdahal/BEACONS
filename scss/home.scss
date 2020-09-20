@@ -244,6 +244,10 @@ a{
       height: 180px;
       padding: 1rem;
       cursor: pointer;
+
+      &:hover{
+        opacity: 0.7;
+      }
      }
     
     
@@ -327,7 +331,6 @@ a{
     margin: 1rem;
     border-radius: 15px;
     outline: none;
-    border: 2px solid red;
    }
    .modal{
      position: fixed;
@@ -646,6 +649,61 @@ a{
 
 
 
+  
+.add-product-popup{
+  p{
+    margin-top: 2rem;
+    font-family: $main-font;
+    font-size: 1rem;
+
+  }
+  .no-account{
+    text-align: center;
+    margin-top: 1rem;
+
+    a{
+      font-family: $main-font;
+      text-decoration: underline;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+#modal10{
+  animation: addproductAnimation 0.2s;
+  .model-content-add-product{
+    width: 22vw;
+  }
+}
+
+@keyframes addproductAnimation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+
+.add-product-popup-btn{
+  border: 2px solid #000;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-family: &main-font;
+  font-size: 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: ease 0.4s;
+  &:hover{
+    color: white;
+    background-color: black;
+  }
+}
 
 
 

@@ -386,7 +386,19 @@
         width: 85vw;
       }
     }
-
+    .shop-section{
+      padding: 1rem 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .each-shop-card {
+        width: 40vw;
+       height: 30vh;
+ 
+       .shop-card-title{
+         font-size: 1rem;
+       }
+      }
+    }
 
 
 
@@ -644,4 +656,19 @@
         width: 85vw;
       }
     }
+
+    .shop-section{
+      padding: 1rem 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      .each-shop-card {
+        width: 40vw;
+       height: 45vh;
+ 
+       .shop-card-title{
+         font-size: 1rem;
+       }
+      }
+    }
+
   }

@@ -277,6 +277,10 @@ a {
   cursor: pointer;
 }
 
+.shop-content .shop-item .shop-image img:hover {
+  opacity: 0.7;
+}
+
 .shop-content .shop-item .shop-image .add-product {
   cursor: pointer;
   margin-top: 1rem;
@@ -371,7 +375,6 @@ a {
   margin: 1rem;
   border-radius: 15px;
   outline: none;
-  border: 2px solid red;
 }
 
 .modal {
@@ -716,6 +719,71 @@ a {
   margin-left: 1rem;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+}
+
+.add-product-popup p {
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.add-product-popup .no-account {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.add-product-popup .no-account a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+
+#modal10 {
+  -webkit-animation: addproductAnimation 0.2s;
+          animation: addproductAnimation 0.2s;
+}
+
+#modal10 .model-content-add-product {
+  width: 22vw;
+}
+
+@-webkit-keyframes addproductAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes addproductAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.add-product-popup-btn {
+  border: 2px solid #000;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-family: .add-product-popup-btn main-font;
+  font-size: 1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.add-product-popup-btn:hover {
+  color: white;
+  background-color: black;
 }
 
 @media screen and (min-width: 860px) and (max-width: 1800px) {
@@ -2176,9 +2244,27 @@ a {
     height: 70vh;
   }
   .shop-content {
+    padding: 2rem 2rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 20vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 0.8rem;
+  }
+  .shop-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
   }
   .shop-top-area {
     -webkit-box-orient: vertical;
@@ -2197,6 +2283,9 @@ a {
   }
   .shop-content .shop-item .shop-image .add-product {
     width: 50vw;
+  }
+  #shop-heading-sm {
+    font-size: 1.8rem;
   }
 }
 
@@ -2608,6 +2697,19 @@ a {
   .modal .modal-content {
     width: 85vw;
   }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 30vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -2831,5 +2933,18 @@ a {
   }
   .modal .modal-content {
     width: 85vw;
+  }
+  .shop-section {
+    padding: 1rem 2rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .shop-section .each-shop-card {
+    width: 40vw;
+    height: 45vh;
+  }
+  .shop-section .each-shop-card .shop-card-title {
+    font-size: 1rem;
   }
 }
