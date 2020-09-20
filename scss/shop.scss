@@ -1,0 +1,372 @@
+// VARIABLES
+$main-font: 'Poppins', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+$main-color:  rgb(0,171,108);
+$py-main :  2rem 2rem;
+$py-secondary :  2rem 2rem;
+
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+// RESET
+*,
+*::after,
+*:before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-size: 62.5%;
+overflow-X: hidden;
+}
+
+
+// UTILITY 
+a{
+  text-decoration: none;
+}
+
+
+// FIRST SECTION
+.container{
+  padding: 2rem 5rem;
+  overflow: hidden;
+
+}
+.first-section{
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+  .navbar{
+    display: flex;
+    align-items: center;
+    .logo{
+      align-items: flex-end;
+      margin-right: 4rem;
+    }
+
+    &-items{
+      display: block;
+      font-size: 1rem;
+
+      // ripple effect button 
+   a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    color: rgba(0, 0, 0, 0.932);
+    font-family: $main-font;
+    font-weight: 500;
+    margin: 1rem;
+
+    &:hover{
+      color: $main-color;
+    }
+  }
+  span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation:  animate 1s linear infinite;
+
+    &:active{
+    position: absolute;
+    background: #ccc;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation:  animate 1s linear infinite;
+
+    }
+  }
+  
+  @keyframes animate {
+    0%{
+      width: 0px;
+      height: 0px;
+      opacity: 0.5;
+    }
+    100%{
+      width: 31rem;
+      height: 31rem;
+      opacity: 0;
+    }
+  }
+ }
+}
+
+  
+  .signin{
+    position: relative;
+    a{
+      text-align: center;
+      align-self: center;
+      color: #000000ea;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: $main-font;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5rem;
+      transition: ease 0.4s;
+      border: 2px solid black;
+      
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.918);
+        color: white;
+      }
+    }
+  }
+// CIRCLE
+
+.circle-1{
+  display: block;
+  height: 110px;
+  width: 110px;
+  background-color: $circle-color;
+  z-index: -1;
+  top: 10px;
+  left: 2px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-2{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: $circle-color;
+  z-index: -1;
+  top: 10px;
+  left: 110px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-3{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: $circle-color;
+  z-index: -1;
+  top: 55px;
+  left: 125px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-4{
+  display: block;
+  height: 600px;
+  width: 800px;
+  background-color: $circle-color;
+  z-index: -1;
+  bottom: 50px;
+  left: 450px;
+  border-radius: 80%;
+  position: absolute;
+}
+
+.circle-5{
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-color: $circle-color-secondary-main;
+  z-index: -1;
+  bottom: 250px;
+  right: -50px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+// right second big circle
+.circle-6{
+  display: block;
+  height: 200px;
+  width: 200px;
+  background-color: $circle-color-secondary;
+  z-index: -1;
+  bottom: 250px;
+  right: -30px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+  
+.shop-heading{
+    font-family: $main-font;
+    font-size: 3rem;
+    font-family: 500;
+    font-weight: 500;
+    padding: 3rem;
+}
+
+.shop-section{
+  padding: 1rem 5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3 ,1fr);
+  .each-shop-card{
+    width: 28vw;
+    height: 48vh;
+    position: relative;
+    border-radius: 35px;
+    cursor: pointer;
+    .shop-card-title{
+      font-family: $main-font;
+      font-size: 1.5rem;
+      font-weight: 400;
+      background-color: #fff;
+      position: absolute;  
+      left: 50%;                        
+      top: 50%; 
+      width: max-content; 
+      display: block;
+      padding: 0.5rem 1.5rem;   
+      border-radius: 25px;                    
+      transform: translate(-50%, -50%); 
+    }
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  a{
+    color: black;
+  }
+  .shop-card-1{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-1.jpg) no-repeat center center/cover;
+  }
+  .shop-card-2{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-2.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-3{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-3.jpg) no-repeat center center/cover;
+  }
+  .shop-card-4{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-4.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-5{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-5.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-6{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-6.jpeg) no-repeat center center/cover;
+  }
+
+  .shop-card-7{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-7.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-8{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-8.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-9{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-9.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-10{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-10.jpg) no-repeat center center/cover;
+  }
+
+  .shop-card-11{
+    background: linear-gradient(98deg, rgba(0,0,0,0.3) 26%, rgba(0,0,0,0.3) 98%),url(/img/shop-11.jpg) no-repeat center center/cover;
+  }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+@import 'media(ipad)';
+@import 'media2(iphone)';
+@import 'media3';

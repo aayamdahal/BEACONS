@@ -964,4 +964,31 @@
         height: 70vh; 
      }
    }
+
+   .shop-content{
+     grid-template-columns: repeat(1, 1fr);
+     gap: 2rem;
+   }
+
+   .shop-top-area{
+     flex-direction: column;
+     align-items: center;
+     .shop-left-part{
+       padding-right: 0rem;
+     }
+   }
+   
+   .modal{
+     .modal-content{
+       width: 92vw;
+     }
+   }
+   .shop-content .shop-item .shop-image .add-product {
+     width: 50vw;
+   }
+
+
+
+
+
   } 

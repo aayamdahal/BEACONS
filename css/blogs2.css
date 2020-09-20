@@ -2356,6 +2356,29 @@ a {
     margin: 2rem;
     height: 70vh;
   }
+  .shop-content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .shop-top-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shop-top-area .shop-left-part {
+    padding-right: 0rem;
+  }
+  .modal .modal-content {
+    width: 92vw;
+  }
+  .shop-content .shop-item .shop-image .add-product {
+    width: 50vw;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -2745,6 +2768,27 @@ a {
     height: 71vh;
     width: 50vw;
   }
+  .shop-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 2rem;
+  }
+  .shop-top-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shop-top-area .shop-left-part {
+    padding-right: 0rem;
+  }
+  .modal .modal-content {
+    width: 85vw;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -2947,5 +2991,26 @@ a {
   }
   .page-2-top-2 {
     display: none;
+  }
+  .shop-content {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 2rem;
+  }
+  .shop-top-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shop-top-area .shop-left-part {
+    padding-right: 0rem;
+  }
+  .modal .modal-content {
+    width: 85vw;
   }
 }
