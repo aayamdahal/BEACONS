@@ -401,7 +401,12 @@
     }
 
 
-
+    #modal10{
+      animation: addproductAnimation 0.2s;
+      .model-content-add-product{
+        width: 55vw;
+      }
+    }
 
 
 
@@ -670,5 +675,10 @@
        }
       }
     }
-
+    #modal10{
+      animation: addproductAnimation 0.2s;
+      .model-content-add-product{
+        width: 55vw;
+      }
+    }
   }

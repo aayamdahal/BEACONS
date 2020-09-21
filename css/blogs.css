@@ -2335,6 +2335,16 @@ a {
   #shop-heading-sm {
     font-size: 1.8rem;
   }
+  #modal10 {
+    -webkit-animation: addproductAnimation 0.2s;
+            animation: addproductAnimation 0.2s;
+  }
+  #modal10 .model-content-add-product {
+    width: 80vw;
+  }
+  .singin-container {
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -2758,6 +2768,13 @@ a {
   .shop-section .each-shop-card .shop-card-title {
     font-size: 1rem;
   }
+  #modal10 {
+    -webkit-animation: addproductAnimation 0.2s;
+            animation: addproductAnimation 0.2s;
+  }
+  #modal10 .model-content-add-product {
+    width: 55vw;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -2994,5 +3011,12 @@ a {
   }
   .shop-section .each-shop-card .shop-card-title {
     font-size: 1rem;
+  }
+  #modal10 {
+    -webkit-animation: addproductAnimation 0.2s;
+            animation: addproductAnimation 0.2s;
+  }
+  #modal10 .model-content-add-product {
+    width: 55vw;
   }
 }
