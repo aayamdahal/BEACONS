@@ -73,11 +73,12 @@
           <img src="/img/sukiuser-img.jpeg" alt="">
         </div>
         <div class="index-user-2">
-          <h6 class="index-user-2-name"><span>beacons.ai/</span>@sukiluser</h6>
+          <h6 class="index-user-2-name"><span>beacons.ai/</span>@annaemcnulty
+          </h6>
           <img src="/img/influencer-2.png" alt="">
         </div>
         <div class="index-user-3">
-          <h6 class="index-user-3-name"><span>beacons.ai/</span>@sukiluser</h6>
+          <h6 class="index-user-3-name"><span>beacons.ai/</span>@remytalyor</h6>
           <img src="/img/influencer-3.png" alt="">
         </div>
 
@@ -86,7 +87,7 @@
           <!-- gallery-user-bio -->
           <div class="gallery-user-bio">
             <i class="far fa-check-circle fa-2x verified"></i>
-            <img src="img/sukiuser-img.jpeg" alt="" class="gallery-user-img" id="img1" onclick="hide()">
+            <img src="img/sukiuser-img.jpeg" alt="" class="gallery-user-img" id="img1" onclick="hide()" checked>
             <p class="gallery-user-name">@sukiluser</p>
             <div class="gallery-user-socials">
               <i class="fas fa-envelope fa-2x"></i>
@@ -142,7 +143,7 @@
     <div class="gallery-user-bio-3">
       <i class="far fa-check-circle fa-2x verified"></i>
       <div class="gallery-user-3-top-image">
-        <img src="img/gallery-image-3.jpg" alt="" class="gallery-user-img-3" id="img2" onclick="hide()">
+        <img src="img/gallery-image-3.jpg" alt="" class="gallery-user-img-3" id="img2" onclick="hide()" checked>
         <p class="gallery-user-name-3">@dotpebble_kints</p>
       </div>
       
@@ -181,7 +182,7 @@
     <div class="gallery-user-bio-4">
       <i class="far fa-check-circle fa-2x verified"></i>
       <div class="gallery-user-4-top-image">
-        <img src="img/gallery-image-4.jpg" alt="" class="gallery-user-img-4" id="img3" onclick="hide()">
+        <img src="img/gallery-image-4.jpg" alt="" class="gallery-user-img-4" id="img3" onclick="hide()" checked>
         <p class="gallery-user-name-4">@ilovekimberlyg</p>
       </div>
       
@@ -266,11 +267,23 @@
       var user2 = document.getElementById('user-2')
       var user3 = document.getElementById('user-3')
 
-      
-        if(user1.style.display == "block"){
-          user2.style.display == "none"
-          user3.style.display == "none"
+      for(var i=0; i< user1.length; i++){
+        if(img1.checked == true){
+          user1.style.display = "block";
+          user2.style.display = "none";
+          user3.style.display = "none";
         }
+        else if(img2.checked == true){
+          user1.style.display = "none";
+          user2.style.display = "block";
+          user3.style.display = "none";
+        }
+        else {
+          user1.style.display = "none";
+          user2.style.display = "none";
+          user3.style.display = "block";
+        }
+        }    
       }
   </script>
   <script src="js/app.js"></script>
