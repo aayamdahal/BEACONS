@@ -172,10 +172,11 @@ a{
   background-color: $circle-color;
   z-index: -1;
   bottom: 50px;
-  left: 450px;
+  left: 880px;
   border-radius: 80%;
   position: absolute;
 }
+
 
 .circle-5{
   display: block;
@@ -183,13 +184,12 @@ a{
   width: 35px;
   background-color: $circle-color-secondary-main;
   z-index: -1;
-  bottom: 250px;
-  right: -50px;
+  bottom: 220px;
+  right: 200px;
   border-radius: 50%;
   position: absolute;
 }
 
-// right second big circle
 .circle-6{
   display: block;
   height: 200px;
@@ -197,7 +197,7 @@ a{
   background-color: $circle-color-secondary;
   z-index: -1;
   bottom: 250px;
-  right: -30px;
+  right: 95px;
   border-radius: 50%;
   position: absolute;
 }

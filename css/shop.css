@@ -188,7 +188,7 @@ a {
   background-color: rgba(221, 221, 221, 0.582);
   z-index: -1;
   bottom: 50px;
-  left: 450px;
+  left: 880px;
   border-radius: 80%;
   position: absolute;
 }
@@ -199,8 +199,8 @@ a {
   width: 35px;
   background-color: #ddd;
   z-index: -1;
-  bottom: 250px;
-  right: -50px;
+  bottom: 220px;
+  right: 200px;
   border-radius: 50%;
   position: absolute;
 }
@@ -212,7 +212,7 @@ a {
   background-color: rgba(221, 221, 221, 0.425);
   z-index: -1;
   bottom: 250px;
-  right: -30px;
+  right: 95px;
   border-radius: 50%;
   position: absolute;
 }
@@ -1822,6 +1822,30 @@ a {
   }
   .singin-container {
     position: relative;
+  }
+  .circle {
+    height: 400px;
+    overflow: hidden;
+  }
+  @-webkit-keyframes animate {
+    0% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) rotate(220deg);
+              transform: translateY(-1000px) rotate(220deg);
+    }
+  }
+  @keyframes animate {
+    0% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) rotate(220deg);
+              transform: translateY(-1000px) rotate(220deg);
+    }
   }
 }
 

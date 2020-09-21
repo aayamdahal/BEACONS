@@ -685,6 +685,80 @@ a{
     border-radius: 85px;
   }
 
+  //  CIRCLE
+
+  .circle-1{
+    display: block;
+    height: 110px;
+    width: 110px;
+    background-color: $circle-color;
+    z-index: -1;
+    top: 100px;
+    left: 2px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .circle-2{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: $circle-color;
+    z-index: -1;
+    top: 100px;
+    left: 110px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .circle-3{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: $circle-color;
+    z-index: -1;
+    top: 150px;
+    left: 125px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .circle-4{
+    display: block;
+    height: 600px;
+    width: 800px;
+    background-color: $circle-color;
+    z-index: -1;
+    bottom: 50px;
+    left: 880px;
+    border-radius: 80%;
+    position: absolute;
+  }
+  
+  
+  .circle-5{
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-color: $circle-color-secondary-main;
+    z-index: -1;
+    bottom: 220px;
+    right: 200px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .circle-6{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: $circle-color-secondary;
+    z-index: -1;
+    bottom: 250px;
+    right: 95px;
+    border-radius: 50%;
+    position: absolute;
+  }
 
 
 

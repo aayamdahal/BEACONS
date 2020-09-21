@@ -16,6 +16,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 62.5%;
+  overflow-X: hidden;
 }
 
 a {
@@ -146,6 +147,78 @@ a {
 
 .form-area {
   padding: 0rem 2rem;
+}
+
+.circle-1 {
+  display: block;
+  height: 110px;
+  width: 110px;
+  background-color: rgba(221, 221, 221, 0.582);
+  z-index: -1;
+  top: 10px;
+  left: 2px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-2 {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(221, 221, 221, 0.582);
+  z-index: -1;
+  top: 10px;
+  left: 110px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-3 {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(221, 221, 221, 0.582);
+  z-index: -1;
+  top: 55px;
+  left: 125px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-4 {
+  display: block;
+  height: 600px;
+  width: 800px;
+  background-color: rgba(221, 221, 221, 0.582);
+  z-index: -1;
+  bottom: 50px;
+  left: 980px;
+  border-radius: 80%;
+  position: absolute;
+}
+
+.circle-5 {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background-color: #ddd;
+  z-index: -1;
+  bottom: 220px;
+  right: 200px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-6 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(221, 221, 221, 0.425);
+  z-index: -1;
+  bottom: 250px;
+  right: 95px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 @media screen and (min-width: 860px) and (max-width: 1800px) {
@@ -1658,6 +1731,30 @@ a {
   }
   .singin-container {
     position: relative;
+  }
+  .circle {
+    height: 400px;
+    overflow: hidden;
+  }
+  @-webkit-keyframes animate {
+    0% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) rotate(220deg);
+              transform: translateY(-1000px) rotate(220deg);
+    }
+  }
+  @keyframes animate {
+    0% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) rotate(220deg);
+              transform: translateY(-1000px) rotate(220deg);
+    }
   }
 }
 
