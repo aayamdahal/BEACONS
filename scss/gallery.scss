@@ -144,7 +144,8 @@ a{
     font-family: $main-font;
     .gallery-user{
       height: 95vh;
-      padding: 2rem;
+      padding: 1rem;
+      width: 24vw;
       border-radius: 25px;
       overflow-y:scroll;
       overflow-x: hidden;
@@ -280,7 +281,6 @@ a{
 
     .gallery-user-2{
       height: 95vh;
-
       padding: 1rem;
       border-radius: 25px;
       overflow-y:scroll;
@@ -831,6 +831,18 @@ a{
   }
 }
 
+.gallery-individual-user{
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  font-family: $main-font;
+  a{
+    color: black;
+  }
+  .gallery-website{
+    color: #808080;
+  }
+}
 // MEDIA QUERIES
 @import 'media(ipad)';
 @import 'media2(iphone)';

@@ -1944,6 +1944,13 @@ body::-webkit-scrollbar-thumb:hover {
               transform: translateY(-1000px) rotate(220deg);
     }
   }
+  #gallery-user-first {
+    width: 75vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -1961,6 +1968,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .gallery-heading {
     text-align: center;
+  }
+  #gallery-user-first {
+    width: 44vw;
   }
 }
 
@@ -2374,6 +2384,10 @@ body::-webkit-scrollbar-thumb:hover {
   #modal10 .model-content-add-product {
     width: 55vw;
   }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -2617,5 +2631,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
   #modal10 .model-content-add-product {
     width: 55vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
   }
 }

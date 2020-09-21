@@ -164,7 +164,8 @@ a {
 
 .gallery-image-container .gallery-user {
   height: 95vh;
-  padding: 2rem;
+  padding: 1rem;
+  width: 24vw;
   border-radius: 25px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -981,6 +982,21 @@ a {
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   margin: 0 2px;
+}
+
+.gallery-individual-user {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery-individual-user a {
+  color: black;
+}
+
+.gallery-individual-user .gallery-website {
+  color: #808080;
 }
 
 @media screen and (min-width: 860px) and (max-width: 1800px) {
@@ -2518,6 +2534,13 @@ a {
               transform: translateY(-1000px) rotate(220deg);
     }
   }
+  #gallery-user-first {
+    width: 75vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -2535,6 +2558,9 @@ a {
   }
   .gallery-heading {
     text-align: center;
+  }
+  #gallery-user-first {
+    width: 44vw;
   }
 }
 
@@ -2948,6 +2974,10 @@ a {
   #modal10 .model-content-add-product {
     width: 55vw;
   }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -3191,5 +3221,9 @@ a {
   }
   #modal10 .model-content-add-product {
     width: 55vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
   }
 }

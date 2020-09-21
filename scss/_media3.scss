@@ -15,6 +15,9 @@
    .gallery-heading{
     text-align: center;
   }
+  #gallery-user-first{
+    width: 44vw;
+  }
 }
 
 // 601PX -- 819PX
@@ -409,7 +412,10 @@
     }
 
 
-
+    #gallery-adjust{
+      height: 100%;
+      width: 70vw;
+    }
 
 
 
@@ -680,5 +686,9 @@
       .model-content-add-product{
         width: 55vw;
       }
+    }
+    #gallery-adjust{
+      height: 100%;
+      width: 70vw;
     }
   }

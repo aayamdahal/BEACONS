@@ -1804,6 +1804,13 @@ nav .logo {
               transform: translateY(-1000px) rotate(220deg);
     }
   }
+  #gallery-user-first {
+    width: 75vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -1821,6 +1828,9 @@ nav .logo {
   }
   .gallery-heading {
     text-align: center;
+  }
+  #gallery-user-first {
+    width: 44vw;
   }
 }
 
@@ -2234,6 +2244,10 @@ nav .logo {
   #modal10 .model-content-add-product {
     width: 55vw;
   }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -2477,5 +2491,9 @@ nav .logo {
   }
   #modal10 .model-content-add-product {
     width: 55vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
   }
 }
