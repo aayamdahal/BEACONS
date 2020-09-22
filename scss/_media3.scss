@@ -417,7 +417,66 @@
       width: 70vw;
     }
 
-
+    #gallery-user-first{
+      width: 75vw;
+    }
+    #gallery-adjust{
+      height: 100%;
+      width: 70vw;
+    }
+    .fix-width-1{
+      width: 70vw;
+      height: 69vh;
+    }
+    .fix-width{
+      height: 69vh;
+      width: 70vw;
+    }
+    .user-profile-circle{
+      display: flex;
+      flex-direction: column;
+      .index-user-1,
+      .index-user-2,
+      .index-user-3{
+        position:static;
+        flex-direction: column-reverse;
+      }
+    }
+    #index-fix{
+      width: 6rem;
+    
+    }
+    #index-fix-1{
+      height: 2.3rem;
+      width: 6rem;
+    }
+    .circle-1{
+      height: 150px;
+      width: 150px;
+      top: 230px;
+      left: -80px;
+    }
+    .circle-2{
+      height: 50px;
+      width: 50px;
+      top: 240px;
+      left: 80px;
+    }
+    .circle-3{
+      height: 500px;
+      width: 500px;
+      top: -125px;
+      left: 520px
+    }
+    .circle-4{
+      display: none;
+    }
+    .circle-5{
+      display: none;
+    }
+    .circle-6{
+      display: none;
+    }
 
 
 
@@ -447,7 +506,7 @@
       .left-part{
         .main-heading-block{
           .main-heading{
-            width: 57vw;
+            width: 100%;
           }
         }
       }
@@ -482,16 +541,18 @@
     }
     .second-section{
       .two-parts{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         width: 100vw;
         .left-part{
           padding-top: 3rem;
         }
         .right-part{
-          justify-content: left;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
           .gallery-user{
             height: 60vh;
-            width: 33vw;
           }
         }
       }
@@ -691,4 +752,69 @@
       height: 100%;
       width: 70vw;
     }
+
+    #gallery-user-first{
+      width: 75vw;
+    }
+    #gallery-adjust{
+      height: 100%;
+      width: 70vw;
+    }
+    .fix-width-1{
+      width: 70vw;
+      height: 69vh;
+    }
+    .fix-width{
+      height: 69vh;
+      width: 70vw;
+    }
+    .user-profile-circle{
+      padding-right: 4rem;
+      padding-top: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      .index-user-1,
+      .index-user-2,
+      .index-user-3{
+        position:static;
+        margin: 0rem 0.8rem;
+        flex-direction: column-reverse;
+      }
+    }
+    #index-fix{
+      width: 6rem;
+    
+    }
+    #index-fix-1{
+      height: 2.3rem;
+      width: 6rem;
+    }
+    .circle-1{
+      height: 150px;
+      width: 150px;
+      top: 230px;
+      left: -80px;
+    }
+    .circle-2{
+      height: 50px;
+      width: 50px;
+      top: 240px;
+      left: 80px;
+    }
+    .circle-3{
+      height: 500px;
+      width: 500px;
+      top: -125px;
+      left: 520px
+    }
+    .circle-4{
+      display: none;
+    }
+    .circle-5{
+      display: none;
+    }
+    .circle-6{
+      display: none;
+    }
+
   }

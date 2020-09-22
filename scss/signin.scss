@@ -65,9 +65,7 @@ a{
     text-decoration: underline;
     color: black;
     }
-    .click{
-      padding-bottom: 1rem;
-    }
+   
     .signin-btn{
       margin-bottom: 1rem;
       width: 100%;
@@ -227,7 +225,23 @@ a{
   border-radius: 50%;
   position: absolute;
 }
-
+#how-to{
+  padding-bottom: 2rem;
+}
+.form-area{
+  button{
+    background: transparent;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    font-family: $main-font;
+  }
+}
+.block{
+  display: block;
+}
   // MEDIA QUERIES
 @import 'media(ipad)';
 @import 'media2(iphone)';

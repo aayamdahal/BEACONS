@@ -25,37 +25,106 @@
     <div class="form-area">
       <h6 class="signin-title">Sign In</h6>
       <p>Not sure how to Sign In?</p>
-      <p class="click">Click <a href="#">here</a></p>
-      <button class="signin-btn">
-      <i class="fab fa-google"></i>
-      <span>Sign in with Google</span>
-      </button>
-      <button class="signin-btn fb-btn">
-      <i class="fab fa-facebook-square"></i>
-      <span>Sign in with Facebook</span>
-        </button>
-      <h2><span>or</span></h2>  
-      <div class="box">
-       <form>
-        <div>
-          <input type="email" name="" required>
-          <label>Email</label>
-        </div>
-        <div>
-          <input type="password" name="" required>
-          <label>Password</label>
-        </div>
-        </form>
-        <button class="signin-btn" id="signin-btn-email">
-        <span>Sign in with Email</span>
-         </button>
-        <a href="#" class="forgot-area center">Forgot Password</a>
-        <p>Don't have an account?<a href="#" class="forgot-area">Join the waitlist</a></a></p>
-       </div> 
-      <div class="logo-signin">
-      <img src="/img/Capture-removebg-preview.png" alt="">
-       </div>
+      <button class="click" onclick="hidePage(nextPage)" id="nextBtn">Click&nbsp;<a href="#">here</a></button>
+
+
+      <div id="prevPage" class="first-sign-in">
+
+              <button class="signin-btn">
+                <i class="fab fa-google"></i>
+                <span>Sign in with Google</span>
+                </button>
+                <button class="signin-btn fb-btn">
+                <i class="fab fa-facebook-square"></i>
+                <span>Sign in with Facebook</span>
+                  </button>
+                <h2><span>or</span></h2>  
+                <div class="box">
+                <form>
+                  <div>
+                    <input type="email" name="" required>
+                    <label>Email</label>
+                  </div>
+                  <div>
+                    <input type="password" name="" required>
+                    <label>Password</label>
+                  </div>
+                  </form>
+                </div>
+                  <button class="signin-btn" id="signin-btn-email">
+                  <span>Sign in with Email</span>
+                  </button>
+
+                  <a href="forgotpass.html" class="forgot-area center">Forgot Password</a>
+          </div> 
+             
+
+
+
+
+          
+        
+
+
+
+          <div class="click-here-div" id="nextPage">
+            <p>Enter your Beacons username below.</p>
+            <p class="click" id="how-to">  We'll tell you how to sign in.</p>
+            <div class="box">
+              <form>               
+                <div>
+                  <input type="text" name="" required>
+                  <label>Username</label>
+                </div>
+                </form>
+              </div>
+            
+            <button class="signin-btn" id="signin-btn-email">
+              <span>Retrieve Sign in method</span>
+              </button>
+          
+
+            <button class="click" onclick="hidePage()" id="prevBtn"><a href="#">Back to Sign in</a></button>
+          </div>
+         
+            <p>Don't have an account?<a href="#" class="forgot-area">Join the waitlist</a></a></p>          
+          <div class="logo-signin">
+          <img src="/img/Capture-removebg-preview.png" alt="">
+           </div>  
      </div>  
   </div> 
+
+
+<script>
+
+  function hidePage(){
+  var nextBtn = document.getElementById('nextBtn');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextPage = document.getElementById('nextPage');
+  var prevPage = document.getElementById('prevPage');
+
+    nextBtn.addEventListener('click',function(){
+      if(nextPage.classList.contains = 'click-here-div'){
+        prevPage.style.display = 'none';
+        nextPage.style.display = 'block';
+      }
+    });
+    
+    prevBtn.addEventListener('click', function(){
+      if(prevPage.classList.contains = 'first-sign-in'){
+        prevPage.style.display = 'block';
+        nextPage.style.display = 'none';
+
+      }
+      
+    });
+
+   
+  }
+  hidePage();
+</script>
+
+
+
 </body>
 </html>

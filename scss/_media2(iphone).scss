@@ -1019,7 +1019,7 @@
  }
  .circle{
    height: 400px;
-  overflow: hidden;
+    overflow: hidden;
 }
 @keyframes animate{
 	0%{
@@ -1037,5 +1037,58 @@
 #gallery-adjust{
   height: 100%;
   width: 70vw;
+}
+.fix-width-1{
+  width: 70vw;
+  height: 69vh;
+}
+.fix-width{
+  height: 69vh;
+  width: 70vw;
+}
+.user-profile-circle{
+  display: flex;
+  flex-direction: column;
+  .index-user-1,
+  .index-user-2,
+  .index-user-3{
+    position:static;
+    flex-direction: column-reverse;
+  }
+}
+#index-fix{
+  width: 6rem;
+
+}
+#index-fix-1{
+  height: 2.3rem;
+  width: 6rem;
+}
+.circle-1{
+  height: 150px;
+  width: 150px;
+  top: 230px;
+  left: -80px;
+}
+.circle-2{
+  height: 50px;
+  width: 50px;
+  top: 240px;
+  left: 80px;
+}
+.circle-3{
+  height: 500px;
+  width: 500px;
+  top: -125px;
+  left: 232px
+}
+.circle-4{
+  display: none;
+}
+.circle-5{
+  display: none;
+}
+.circle-6{
+  display: none;
 }
   } 

@@ -59,7 +59,7 @@ a {
 .navbar-items a {
   position: relative;
   display: inline-block;
-  background: #fff;
+  background: transparent;
   text-decoration: none;
   overflow: hidden;
   padding: 0.5rem 1rem;
@@ -840,9 +840,9 @@ a {
 
 .index-user-1 {
   z-index: 10;
-  top: 180px;
-  left: -25px;
   position: absolute;
+  top: 165px;
+  left: -25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,9 +880,9 @@ a {
 }
 
 .index-user-2 {
+  bottom: 105px;
+  left: -155px;
   z-index: 10;
-  top: 320px;
-  left: -125px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,9 +921,9 @@ a {
 }
 
 .index-user-3 {
+  bottom: -35px;
+  left: -185px;
   z-index: 10;
-  top: 460px;
-  left: -195px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1124,6 +1124,43 @@ a {
   text-align: center;
   padding: 0.8rem;
   border-radius: 25px;
+}
+
+.fix-width {
+  width: 24vw;
+}
+
+.fix-width-1 {
+  width: 24vw;
+}
+
+.gallery-user-4::-moz-selection {
+  color: white;
+  background: #0089f2;
+}
+
+.gallery-user-4::selection {
+  color: white;
+  background: #0089f2;
+}
+
+.gallery-user-4::-webkit-scrollbar {
+  width: 10px;
+  overflow: hidden;
+}
+
+.gallery-user-4::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  border-radius: 55px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-user-4::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #ccc;
+  border-radius: 85px;
 }
 
 @media screen and (min-width: 860px) and (max-width: 1800px) {
@@ -2668,6 +2705,66 @@ a {
     height: 100%;
     width: 70vw;
   }
+  .fix-width-1 {
+    width: 70vw;
+    height: 69vh;
+  }
+  .fix-width {
+    height: 69vh;
+    width: 70vw;
+  }
+  .user-profile-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-profile-circle .index-user-1,
+  .user-profile-circle .index-user-2,
+  .user-profile-circle .index-user-3 {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #index-fix {
+    width: 6rem;
+  }
+  #index-fix-1 {
+    height: 2.3rem;
+    width: 6rem;
+  }
+  .circle-1 {
+    height: 150px;
+    width: 150px;
+    top: 230px;
+    left: -80px;
+  }
+  .circle-2 {
+    height: 50px;
+    width: 50px;
+    top: 240px;
+    left: 80px;
+  }
+  .circle-3 {
+    height: 500px;
+    width: 500px;
+    top: -125px;
+    left: 232px;
+  }
+  .circle-4 {
+    display: none;
+  }
+  .circle-5 {
+    display: none;
+  }
+  .circle-6 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -3105,6 +3202,73 @@ a {
     height: 100%;
     width: 70vw;
   }
+  #gallery-user-first {
+    width: 75vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
+  .fix-width-1 {
+    width: 70vw;
+    height: 69vh;
+  }
+  .fix-width {
+    height: 69vh;
+    width: 70vw;
+  }
+  .user-profile-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-profile-circle .index-user-1,
+  .user-profile-circle .index-user-2,
+  .user-profile-circle .index-user-3 {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #index-fix {
+    width: 6rem;
+  }
+  #index-fix-1 {
+    height: 2.3rem;
+    width: 6rem;
+  }
+  .circle-1 {
+    height: 150px;
+    width: 150px;
+    top: 230px;
+    left: -80px;
+  }
+  .circle-2 {
+    height: 50px;
+    width: 50px;
+    top: 240px;
+    left: 80px;
+  }
+  .circle-3 {
+    height: 500px;
+    width: 500px;
+    top: -125px;
+    left: 520px;
+  }
+  .circle-4 {
+    display: none;
+  }
+  .circle-5 {
+    display: none;
+  }
+  .circle-6 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 820px) and (max-width: 999px) {
@@ -3126,7 +3290,7 @@ a {
     width: 50vw;
   }
   .two-parts .left-part .main-heading-block .main-heading {
-    width: 57vw;
+    width: 100%;
   }
 }
 
@@ -3156,21 +3320,30 @@ a {
     display: none;
   }
   .second-section .two-parts {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     width: 100vw;
   }
   .second-section .two-parts .left-part {
     padding-top: 3rem;
   }
   .second-section .two-parts .right-part {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .second-section .two-parts .right-part .gallery-user {
     height: 60vh;
-    width: 33vw;
   }
   .container {
     padding: 1rem 2rem;
@@ -3352,5 +3525,75 @@ a {
   #gallery-adjust {
     height: 100%;
     width: 70vw;
+  }
+  #gallery-user-first {
+    width: 75vw;
+  }
+  #gallery-adjust {
+    height: 100%;
+    width: 70vw;
+  }
+  .fix-width-1 {
+    width: 70vw;
+    height: 69vh;
+  }
+  .fix-width {
+    height: 69vh;
+    width: 70vw;
+  }
+  .user-profile-circle {
+    padding-right: 4rem;
+    padding-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .user-profile-circle .index-user-1,
+  .user-profile-circle .index-user-2,
+  .user-profile-circle .index-user-3 {
+    position: static;
+    margin: 0rem 0.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #index-fix {
+    width: 6rem;
+  }
+  #index-fix-1 {
+    height: 2.3rem;
+    width: 6rem;
+  }
+  .circle-1 {
+    height: 150px;
+    width: 150px;
+    top: 230px;
+    left: -80px;
+  }
+  .circle-2 {
+    height: 50px;
+    width: 50px;
+    top: 240px;
+    left: 80px;
+  }
+  .circle-3 {
+    height: 500px;
+    width: 500px;
+    top: -125px;
+    left: 520px;
+  }
+  .circle-4 {
+    display: none;
+  }
+  .circle-5 {
+    display: none;
+  }
+  .circle-6 {
+    display: none;
   }
 }
