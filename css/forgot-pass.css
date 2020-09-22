@@ -135,6 +135,7 @@ a {
   -webkit-transform: translateY(-20px) translateX(-3px);
           transform: translateY(-20px) translateX(-3px);
   color: #000;
+  background: transparent;
   font-size: 12px;
 }
 

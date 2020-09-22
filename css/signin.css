@@ -91,6 +91,7 @@ a {
           box-sizing: border-box;
   outline: none;
   border: none;
+  background: transparent;
   border-bottom: 2px solid black;
 }
 
@@ -116,6 +117,7 @@ a {
   -webkit-transform: translateY(-20px) translateX(-3px);
           transform: translateY(-20px) translateX(-3px);
   color: #000;
+  background: transparent;
   font-size: 12px;
 }
 
