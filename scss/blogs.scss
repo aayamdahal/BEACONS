@@ -361,8 +361,10 @@ a{
   }
   .main-card-13{
   opacity: 0;
+  
   }
   .main-card-1{
+    z-index: 1;
     transition: ease 0.5s;
     &:hover{
       box-shadow: $box-shadow-hover;
@@ -673,6 +675,11 @@ cursor: pointer;
     font-size: 1rem;
     margin: 1rem;
   }
+
+}
+#hover-fix{
+  box-shadow: $box-shadow-hover;
+  transform: $translate-card;
 }
 // MEDIA QUERIES
 @import 'media(ipad)';

@@ -829,6 +829,7 @@
     } 
   }
 .panel-primary{
+  transform: scale(0.85);
   padding: 1rem 0rem;
 }
 .table{
@@ -1031,13 +1032,8 @@
 	}
 }
 
-#gallery-user-first{
-  width: 75vw;
-}
-#gallery-adjust{
-  height: 100%;
-  width: 70vw;
-}
+
+
 .fix-width-1{
   width: 70vw;
   height: 69vh;
@@ -1090,5 +1086,12 @@
 }
 .circle-6{
   display: none;
+}
+.user-profile-circle{
+  padding-top: 2rem;
+}
+
+#gallery-user-first{
+  width: 83vw
 }
   } 
