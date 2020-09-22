@@ -2509,6 +2509,7 @@ a {
   .user-profile-circle .index-user-1,
   .user-profile-circle .index-user-2,
   .user-profile-circle .index-user-3 {
+    margin-bottom: 1rem;
     position: static;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2554,6 +2555,12 @@ a {
   }
   #gallery-user-first {
     width: 83vw;
+  }
+  .form-area {
+    padding: 0rem;
+  }
+  .signin-container {
+    padding: 0rem;
   }
 }
 
