@@ -1681,7 +1681,7 @@ a {
     text-align: center;
   }
   .gallery-image-container {
-    padding: 1rem;
+    padding: 0rem;
     gap: 0rem;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
