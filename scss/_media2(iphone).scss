@@ -913,6 +913,7 @@
 }
 
 .gallery-image-container{
+    height: 100vh;
   grid-template-columns: repeat(1,1fr);
  }
 #responsive-hide{
@@ -1101,4 +1102,11 @@
 .signin-container{
   padding: 0rem;
 }
+
+#gallery-adjust{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
   } 

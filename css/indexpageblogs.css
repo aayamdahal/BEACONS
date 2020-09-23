@@ -2385,6 +2385,7 @@ blockquote cite:before {
     width: 90vw;
   }
   .gallery-image-container {
+    height: 100vh;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
@@ -2582,6 +2583,10 @@ blockquote cite:before {
   }
   .signin-container {
     padding: 0rem;
+  }
+  #gallery-adjust {
+    min-width: 100vw;
+    min-height: 100vh;
   }
 }
 
